@@ -1,0 +1,31 @@
+<app-template [dataSource]="tableData" [attributeData]="attributeData">
+  <ng-content links>
+    <a [routerLink]="['/']" class="subrayado">MarketPlace</a>
+    <a class="separator"> > </a>
+    <a [routerLink]="['/descriptions']" class="subrayado">Descripciones</a>
+    <a class="separator"> > </a>
+    <a [routerLink]="['/descriptions/chips'] " class="subrayado">Chips</a>
+  </ng-content>
+  <ng-content title>
+    <span>Chips</span>
+  </ng-content>
+  <ng-content topText><p>Chips are always used inside a container. To create chips, start with a <strong>< mat-chip-set ></strong> element. Then, nest <strong>< mat-chip ></strong> elements inside the <strong>< mat-chip-set ></strong>
+  </p>
+  </ng-content>
+  <ng-content titleTexts>
+    <h2>Module</h2>
+  </ng-content>
+  <ng-content subtitleTexts>
+    <pre><code class="language-html"><span class="hljs-tag"><span class="hljs-name">IMPORT</span> <span class="hljs-attr">ChipsComponent </span><span class="hljs-name">from </span> '../../../components/atoms/chips/chips.component';</span></code></pre>
+  </ng-content>
+  <ng-content titleTable1>
+    <H2>Properties</H2>
+  </ng-content>
+  <ng-content titleTable2>
+    <H2>Attributes</H2>
+  </ng-content>
+  <ng-content cardTitle><strong>Example</strong></ng-content>
+  <ng-content cardSubtitle><strong>Chips</strong></ng-content>
+  <ng-content cardContent><app-chips></app-chips></ng-content>
+
+</app-template>

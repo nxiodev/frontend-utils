@@ -1,0 +1,31 @@
+<app-template [dataSource]="tableData" [attributeData]="attributeData">
+  <ng-content links>
+    <a [routerLink]="['/']" class="subrayado">MarketPlace</a>
+    <a class="separator"> > </a>
+    <a [routerLink]="['/descriptions']" class="subrayado">Descripciones</a>
+    <a class="separator"> > </a>
+    <a [routerLink]="['/descriptions/checkbox'] " class="subrayado">CheckBox</a>
+  </ng-content>
+  <ng-content title>
+    <span>CheckBox</span>
+  </ng-content>
+  <ng-content topText><p><strong>< mat-checkbox ></strong> provides the same functionality as a native <strong>< input type="checkbox" ></strong> enhanced with Material Design styling and animations.
+  </p>
+  </ng-content>
+  <ng-content titleTexts>
+    <h2>Module</h2>
+  </ng-content>
+  <ng-content subtitleTexts>
+    <pre><code class="language-html"><span class="hljs-tag"><span class="hljs-name">IMPORT</span> <span class="hljs-attr">CheckboxComponent </span><span class="hljs-name">from </span> '../../../components/atoms/Checkbox/checkbox.component';</span></code></pre>
+  </ng-content>
+  <ng-content titleTable1>
+    <H2>Properties</H2>
+  </ng-content>
+  <ng-content titleTable2>
+    <H2>Attributes</H2>
+  </ng-content>
+  <ng-content cardTitle><strong>Example</strong></ng-content>
+  <ng-content cardSubtitle><strong>Checkbox</strong></ng-content>
+  <ng-content cardContent><app-checkbox></app-checkbox></ng-content>
+
+</app-template>

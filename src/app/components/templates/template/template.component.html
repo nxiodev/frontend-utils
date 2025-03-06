@@ -1,0 +1,54 @@
+  <app-header>
+    <ng-content sideLinks>
+      <div>
+        <!-- Enlace de navegación con efecto cuando está activo -->
+        <a mat-list-item [routerLink]="['/descriptions/button']" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
+          Boton <!-- BORRAR -->
+        </a>
+        <a mat-list-item [routerLink]="['/descriptions/badge']" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
+          Badge
+        </a>
+        <a mat-list-item [routerLink]="['/descriptions/card']" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
+          Card
+        </a>
+        <a mat-list-item [routerLink]="['/descriptions/input']" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
+          Input
+        </a>
+        <a mat-list-item [routerLink]="['/descriptions/grid']" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
+          Grid
+        </a>
+        <a mat-list-item [routerLink]="['/descriptions/checkbox']" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
+          Checkbox
+        </a>
+        <a mat-list-item [routerLink]="['/descriptions/progressspinner']" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
+          Progress Spinner
+        </a>
+        <a mat-list-item [routerLink]="['/descriptions/icon']" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
+          Icon
+        </a>
+        <!-- Agregar más enlaces según sea necesario -->
+      </div>
+    </ng-content>
+    <ng-content select="[links]" links></ng-content>
+    <ng-content select="[title]" title></ng-content>
+    <ng-content body>
+      <div class="fondo">
+        <app-body [dataSource]="dataSource" [attributeData]="attributeData"
+                  title="{{title}}"
+                  subtitle="{{subtitle}}"
+                  imageUrl="{{imageUrl}}"
+                  HaveContent="{{HaveContent}}">
+          <!--  -->
+          <ng-content select="[topText]" topText></ng-content>
+          <ng-content select="[titleTexts]" titleTexts></ng-content>
+          <ng-content select="[subtitleTexts]" subtitleTexts></ng-content>
+          <ng-content select="[titleTable1]" titleTable1></ng-content>
+          <ng-content select="[titleTable2]" titleTable2></ng-content>
+        </app-body>
+      </div>
+
+    </ng-content>
+  </app-header>
+
+
+

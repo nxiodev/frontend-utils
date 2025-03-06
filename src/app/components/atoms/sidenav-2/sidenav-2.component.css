@@ -1,0 +1,10 @@
+mat-sidenav {
+  position: fixed;    /* Hace que el sidenav se quede fijo al hacer scroll */
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 15%;
+  overflow-y: auto;   /* Permite que el contenido del sidenav tenga scroll */
+  z-index: 100;
+  background-color: #4caf50;
+}

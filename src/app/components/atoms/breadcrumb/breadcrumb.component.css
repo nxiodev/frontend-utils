@@ -1,0 +1,15 @@
+.subrayado {
+  text-decoration: none; /* Quita el subrayado */
+  color: inherit; /* Mantiene el color del texto según el tema */
+  margin: 0 5px; /* Agrega espacio alrededor de cada enlace */
+}
+
+mat-toolbar a:hover {
+  text-decoration: underline; /* Opción: subrayar solo al pasar el mouse */
+}
+
+mat-toolbar a.separator {
+  pointer-events: none; /* Hace que los ">" no sean clickeables */
+  font-weight: bold; /* Opción: resaltar el separador */
+  color: gray; /* Opción: cambiar color del separador */
+}

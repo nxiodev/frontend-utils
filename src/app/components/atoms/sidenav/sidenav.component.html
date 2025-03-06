@@ -1,0 +1,11 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #sidenav mode="side" opened class="sidenav-scroll">
+    <ng-content select="[linkList]" linkList></ng-content>
+  </mat-sidenav>
+
+  <mat-sidenav-content class="main-content">
+    <!-- Aquí va el contenido de la página -->
+    <ng-content select="[atomPage]" atomPage></ng-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+

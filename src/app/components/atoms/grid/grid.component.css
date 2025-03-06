@@ -1,0 +1,11 @@
+/* Elimina el color azul y el subrayado del enlace */
+.card-link {
+  text-decoration: none; /* Quitar subrayado */
+  color: inherit; /* Hereda el color del texto, para que coincida con el diseño del card */
+  display: block; /* Asegura que el enlace ocupe todo el espacio disponible */
+}
+
+/* Opcional: Si deseas cambiar el cursor al pasar sobre el card */
+.card-link:hover {
+  cursor: pointer;
+}

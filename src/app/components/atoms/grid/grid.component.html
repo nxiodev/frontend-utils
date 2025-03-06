@@ -1,0 +1,5 @@
+<mat-grid-list [cols]="cols" [rowHeight]="rowHeight">
+  <mat-grid-tile *ngFor="let grid of grids">
+    <ng-container *ngTemplateOutlet="grid.template"></ng-container>
+  </mat-grid-tile>
+</mat-grid-list>

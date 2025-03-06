@@ -1,0 +1,32 @@
+<app-template [dataSource]="tableData" [attributeData]="attributeData">
+  <ng-content links>
+    <a [routerLink]="['/']" class="subrayado">MarketPlace</a>
+    <a class="separator"> > </a>
+    <a [routerLink]="['/descriptions']" class="subrayado">Descripciones</a>
+    <a class="separator"> > </a>
+    <a [routerLink]="['/descriptions/badge'] " class="subrayado">Badge</a>
+  </ng-content>
+  <ng-content title>
+    <span>Badge</span>
+  </ng-content>
+  <ng-content topText><p>Badges are small status descriptors for UI elements. A badge consists of a small circle, typically containing a number or other short set of characters, <br>that appears in proximity to another object.
+    Badges must always be applied to block-level elements.
+  </p>
+  </ng-content>
+  <ng-content titleTexts>
+    <h2>Module</h2>
+  </ng-content>
+  <ng-content subtitleTexts>
+    <pre><code class="language-html"><span class="hljs-tag"><span class="hljs-name">IMPORT</span> <span class="hljs-attr">BadgeComponent </span><span class="hljs-name">from </span> '../../../components/atoms/Badge/badge.component';</span></code></pre>
+  </ng-content>
+  <ng-content titleTable1>
+    <H2>Properties</H2>
+  </ng-content>
+  <ng-content titleTable2>
+    <H2>Attributes</H2>
+  </ng-content>
+  <ng-content cardTitle><strong>Example</strong></ng-content>
+  <ng-content cardSubtitle><strong>Badge</strong></ng-content>
+  <ng-content cardContent><app-badge></app-badge></ng-content>
+
+</app-template>

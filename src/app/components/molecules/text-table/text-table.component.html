@@ -1,0 +1,11 @@
+<div class="table-container">
+  <div *ngIf="attributeData.length === 0">
+    <ng-content select="[titleTable1]" titleTable1></ng-content>
+    <app-table [dataSource]="dataSource"></app-table>
+  </div>
+  <!-- Si attributeData tiene datos, solo muestra attributeData -->
+  <div *ngIf="attributeData.length > 0">
+    <ng-content select="[titleTable2]" titleTable2></ng-content>
+    <app-table [dataSource]="attributeData"></app-table>
+  </div>
+</div>

@@ -1,0 +1,34 @@
+<app-template [dataSource]="tableData" [attributeData]="attributeData">
+  <ng-content links>
+    <a [routerLink]="['/']" class="subrayado">MarketPlace</a>
+    <a class="separator"> > </a>
+    <a [routerLink]="['/descriptions']" class="subrayado">Descripciones</a>
+    <a class="separator"> > </a>
+    <a [routerLink]="['/descriptions/card'] " class="subrayado">Card</a>
+  </ng-content>
+  <ng-content title>
+    <span>Card</span>
+  </ng-content>
+  <ng-content topText><p><strong>< app-card ></strong> is a content container for text, photos, and actions in the context of a single subject.
+  </p>
+  </ng-content>
+  <ng-content titleTexts>
+    <h2>Module</h2>
+  </ng-content>
+  <ng-content subtitleTexts>
+    <pre><code class="language-html"><span class="hljs-tag"><span class="hljs-name">IMPORT</span> <span class="hljs-attr">CardComponent </span><span class="hljs-name">from </span> '../../../components/atoms/Card/card.component';</span></code></pre>
+  </ng-content>
+  <ng-content titleTable1>
+    <H2>Properties</H2>
+  </ng-content>
+  <ng-content titleTable2>
+    <H2>Attributes</H2>
+  </ng-content>
+  <ng-content cardTitle><strong>Example</strong></ng-content>
+  <ng-content cardSubtitle><strong>Card</strong></ng-content>
+  <ng-content cardContent><app-card>
+    <ng-content cardTitle><h2>Card</h2></ng-content>
+    <ng-content cardSubtitle><a>ejemplo de uso de card</a></ng-content>
+  </app-card></ng-content>
+
+</app-template>

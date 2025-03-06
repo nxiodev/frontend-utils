@@ -1,0 +1,59 @@
+.demo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 20px; /* Agregar un poco de margen para separación */
+}
+
+.demo-section button {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #4caf50; /* Color de fondo verde */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para el badge */
+.demo-section button[matBadge] {
+  position: relative;
+  display: inline-block;
+}
+
+.demo-section button[matBadge]:before {
+  content: attr(matBadge);
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  background-color: #f44336; /* Rojo para el badge */
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Efectos de hover en el botón */
+.demo-section button:hover {
+  background-color: #45a049; /* Color de fondo verde más oscuro al pasar el mouse */
+}
+
+/* Ajustes de márgenes y espaciado */
+.demo-section {
+  margin-bottom: 20px;
+}
+
+.demo-section button + .demo-section {
+  margin-top: 20px;
+}

@@ -1,0 +1,5 @@
+.subrayado {
+  text-decoration: none; /* Quita el subrayado */
+  color: inherit; /* Mantiene el color del texto según el tema */
+  margin: 0 5px; /* Agrega espacio alrededor de cada enlace */
+}

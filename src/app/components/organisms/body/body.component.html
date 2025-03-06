@@ -1,0 +1,29 @@
+<app-div-text>
+  <ng-content select="[topText]" topText></ng-content>
+</app-div-text>
+
+<app-texts>
+  <ng-content select="[titleTexts]" titleTexts></ng-content>
+  <ng-content select="[subtitleTexts]" subtitleTexts></ng-content>
+</app-texts>
+
+<app-text-table [dataSource]="dataSource">
+  <ng-content select="[titleTable1]" titleTable1></ng-content>
+</app-text-table>
+
+<app-text-table [attributeData]="attributeData">
+  <ng-content select="[titleTable2]" titleTable2></ng-content>
+</app-text-table>
+
+<app-card-atom
+   title="{{title}}"
+   subtitle="{{subtitle}}"
+   imageUrl="{{imageUrl}}"
+   HaveContent="{{HaveContent}}">
+  <ng-content></ng-content>
+
+</app-card-atom>
+
+
+
+

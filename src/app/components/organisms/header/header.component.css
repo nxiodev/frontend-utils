@@ -1,0 +1,7 @@
+.fondo{
+  flex-direction: column;
+  flex: 1 1 auto;
+  background-color: #e2e8f0; /* Color de fondo cuando el enlace está activo */
+  /* Color del texto cuando el enlace está activo */
+  min-height: calc(100vh - 64px);
+}

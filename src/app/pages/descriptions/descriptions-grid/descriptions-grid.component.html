@@ -1,0 +1,31 @@
+<app-template [dataSource]="tableData" [attributeData]="attributeData">
+  <ng-content links>
+    <a [routerLink]="['/']" class="subrayado">MarketPlace</a>
+    <a class="separator"> > </a>
+    <a [routerLink]="['/descriptions']" class="subrayado">Descripciones</a>
+    <a class="separator"> > </a>
+    <a [routerLink]="['/descriptions/grid'] " class="subrayado">Grid</a>
+  </ng-content>
+  <ng-content title>
+    <span>Grid</span>
+  </ng-content>
+  <ng-content topText><p><strong>mat-grid-list</strong> is a two-dimensional list view that arranges cells into grid-based layout.
+  </p>
+  </ng-content>
+  <ng-content titleTexts>
+    <h2>Module</h2>
+  </ng-content>
+  <ng-content subtitleTexts>
+    <pre><code class="language-html"><span class="hljs-tag"><span class="hljs-name">IMPORT</span> <span class="hljs-attr">GridComponent </span><span class="hljs-name">from </span> '../../../components/atoms/grid/grid.component';</span></code></pre>
+  </ng-content>
+  <ng-content titleTable1>
+    <H2>Properties</H2>
+  </ng-content>
+  <ng-content titleTable2>
+    <H2>Attributes</H2>
+  </ng-content>
+  <ng-content cardTitle><strong>Example</strong></ng-content>
+  <ng-content cardSubtitle><strong>Grid</strong></ng-content>
+  <ng-content cardContent><app-grid></app-grid></ng-content>
+
+</app-template>

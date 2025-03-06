@@ -1,0 +1,80 @@
+<app-grid [cols]="3" [rowHeight]="'400px'" [grids]="gridTemplates"></app-grid>
+
+<ng-template #template1>
+  <a [routerLink]="'descriptions/badge'" class="card-link">
+    <app-card
+      title="Badge"
+      subtitle="Captures boolean input with an optional indeterminate mode"
+      imageUrl="https://material.angular.io/assets/screenshots/badge.scene.png"
+    >
+    </app-card>
+  </a>
+</ng-template>
+
+<ng-template #template2>
+  <a [routerLink]="'descriptions/button'" class="card-link">
+    <app-card
+      title="Button"
+      subtitle="An interactive button with a range of presentation options."
+      imageUrl="https://material.angular.io/assets/screenshots/button.scene.png"
+    ></app-card>
+  </a>
+</ng-template>
+
+<ng-template #template3>
+  <a [routerLink]="'descriptions/card'" class="card-link">
+    <app-card
+      title="Card"
+      subtitle="A styled container for pieces of itemized content"
+      imageUrl="https://material.angular.io/assets/screenshots/card.scene.png"></app-card>
+  </a>
+</ng-template>
+
+<ng-template #template4>
+  <a [routerLink]="'descriptions/input'" class="card-link">
+    <app-card
+      title="Input"
+      subtitle="Enables native inputs to be used within a Form field."
+      imageUrl="https://material.angular.io/assets/screenshots/input.scene.png"
+    ></app-card>
+  </a>
+</ng-template>
+
+<ng-template #template5>
+  <a [routerLink]="'descriptions/grid'" class="card-link">
+    <app-card
+      title="Grid"
+      subtitle="A flexible structure for presenting content item in a grid"
+      imageUrl="https://material.angular.io/assets/screenshots/grid-list.scene.png"
+    ></app-card>
+  </a>
+</ng-template>
+
+<ng-template #template6>
+  <a [routerLink]="'descriptions/checkbox'" class="card-link">
+    <app-card
+      title="Checkbox"
+      subtitle="Captures boolean input with an optional <br> indeterminate mode"
+      imageUrl="https://material.angular.io/assets/screenshots/checkbox.scene.png"></app-card>
+  </a>
+</ng-template>
+
+<ng-template #template7>
+  <a [routerLink]="'descriptions/progressspinner'" class="card-link">
+    <app-card
+      title="Progress Spinner"
+      subtitle="A circular progress indicator"
+      imageUrl="https://material.angular.io/assets/screenshots/progress-spinner.scene.png"
+    ></app-card>
+  </a>
+</ng-template>
+
+<ng-template #template8>
+  <a [routerLink]="'descriptions/icon'" class="card-link">
+    <app-card
+      title="Icon"
+      subtitle="Renders a specific icon."
+      imageUrl="https://material.angular.io/assets/screenshots/icon.scene.png"
+    ></app-card>
+  </a>
+</ng-template>

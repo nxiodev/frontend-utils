@@ -1,0 +1,56 @@
+section {
+  display: table;
+  width: 100%; /* Asegura que ocupe todo el ancho disponible */
+}
+
+.example-label {
+  display: table-cell;
+  font-size: 14px;
+  margin-left: 8px;
+  min-width: 120px;
+  color: #333; /* Color de texto más oscuro */
+}
+
+.example-button-row {
+  display: table-cell;
+  max-width: 600px;
+}
+
+.example-button-row .mat-mdc-button-base {
+  margin: 8px 8px 8px 0;
+  padding: 10px 20px; /* Añadir padding para mejorar la apariencia */
+  background-color: #007bff; /* Color de fondo atractivo */
+  color: white; /* Texto blanco */
+  border-radius: 8px; /* Bordes redondeados */
+  border: none; /* Eliminar borde predeterminado */
+  font-size: 16px; /* Aumentar el tamaño del texto para mejorar la legibilidad */
+  transition: background-color 0.3s, transform 0.2s; /* Transición suave para hover */
+}
+
+.example-button-row .mat-mdc-button-base:hover {
+  background-color: #0056b3; /* Cambio de color al pasar el mouse */
+  transform: translateY(-2px); /* Efecto de desplazamiento al pasar el mouse */
+}
+
+.example-button-row .mat-mdc-button-base:active {
+  background-color: #004085; /* Color al presionar */
+  transform: translateY(0); /* Restablece el desplazamiento */
+}
+
+.example-flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px; /* Espaciado entre elementos */
+  margin-bottom: 20px; /* Espacio inferior */
+}
+
+.example-button-container {
+  display: flex;
+  justify-content: center;
+  width: 140px;
+}
+
+.example-button-container .mat-mdc-button-base {
+  width: 100%; /* Hace que el botón ocupe todo el ancho disponible dentro del contenedor */
+}

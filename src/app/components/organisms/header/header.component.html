@@ -1,0 +1,21 @@
+<app-sidenav>
+  <ng-content select="[linkList]" linkList>
+    <mat-nav-list>
+      <ng-content select="[sideLinks]" sideLinks></ng-content>
+    </mat-nav-list>
+  </ng-content>
+  <ng-content select="[atomPage]" atomPage>
+    <app-toolbar class="header">
+      <app-breadcrumb breadcrumb>
+        <ng-content select="[links]"></ng-content>
+      </app-breadcrumb>
+      <span class="titulo" titulo>
+        <ng-content select="[title]"></ng-content>
+      </span>
+    </app-toolbar>
+    <div class="fondo">
+      <ng-content select="[body]"></ng-content>
+    </div>
+  </ng-content>
+</app-sidenav>
+

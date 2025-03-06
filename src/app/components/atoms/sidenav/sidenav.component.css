@@ -1,0 +1,36 @@
+.sidenav-container {
+  height: 100%;
+  display: flex;
+  background-color: #f44336;
+}
+
+mat-sidenav {
+  position: fixed;    /* Hace que el sidenav se quede fijo al hacer scroll */
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 15%;
+  overflow-y: auto;   /* Permite que el contenido del sidenav tenga scroll */
+  z-index: 100;
+  background-color: #4caf50;
+}
+
+.sidenav-content {
+  padding: 16px;
+  max-height: 100%;   /* Para asegurar que el contenido se ajuste al alto disponible */
+}
+
+.main-content {
+  margin-left: 250px; /* Asegura que el contenido principal no quede debajo del sidenav */
+  padding: 16px;
+  overflow-y: auto;   /* Permite que el contenido del main haga scroll independiente */
+  height: 100%;
+  width: 100%;
+  background-color: #4c59af;
+}
+
+.content {
+  max-height: 100vh;
+  overflow-y: auto;   /* Habilita el scroll solo en el contenido */
+}
+

@@ -1,0 +1,31 @@
+<app-template [dataSource]="tableData" [attributeData]="attributeData">
+  <ng-content links>
+    <a [routerLink]="['/']" class="subrayado">MarketPlace</a>
+    <a class="separator"> > </a>
+    <a [routerLink]="['/descriptions']" class="subrayado">Descripciones</a>
+    <a class="separator"> > </a>
+    <a [routerLink]="['/descriptions/input']" class="subrayado">Input</a>
+  </ng-content>
+  <ng-content title>
+    <span>Input</span>
+  </ng-content>
+  <ng-content topText><p><strong>matInput</strong> is a directive that allows native <strong>< input ></strong> and <strong>< textarea ></strong> elements to work with <strong>< mat-form-field ></strong>
+  </p>
+  </ng-content>
+  <ng-content titleTexts>
+    <h2>Module</h2>
+  </ng-content>
+  <ng-content subtitleTexts>
+    <pre><code class="language-html"><span class="hljs-tag"><span class="hljs-name">IMPORT</span> <span class="hljs-attr">InputComponent </span><span class="hljs-name">from </span> '../../../components/atoms/input/input.component';</span></code></pre>
+  </ng-content>
+  <ng-content titleTable1>
+    <H2>Properties</H2>
+  </ng-content>
+  <ng-content titleTable2>
+    <H2>Attributes</H2>
+  </ng-content>
+  <ng-content cardTitle><strong>Example</strong></ng-content>
+  <ng-content cardSubtitle><strong>Input</strong></ng-content>
+  <ng-content cardContent><app-input></app-input></ng-content>
+
+</app-template>

@@ -1,0 +1,33 @@
+<app-template [dataSource]="tableData" [attributeData]="attributeData" title="Badge"
+              subtitle="Captures boolean input with an optional indeterminate mode"
+              imageUrl="https://material.angular.io/assets/screenshots/badge.scene.png">
+<ng-content links>
+  <a [routerLink]="['/']" class="subrayado">MarketPlace</a>
+  <a class="separator"> > </a>
+  <a [routerLink]="['/descriptions']" class="subrayado">Descripciones</a>
+  <a class="separator"> > </a>
+  <a [routerLink]="['/descriptions/button'] " class="subrayado">Botón</a>
+</ng-content>
+  <ng-content title>
+    <span>Botón</span>
+  </ng-content>
+  <ng-content topText><p>Angular Material buttons are native <strong>button</strong> or a elements enhanced with Material Design styling and ink ripples.
+  <br>
+    Exported as: <strong>Button</strong>
+  </p>
+  </ng-content>
+  <ng-content titleTexts>
+    <h2>Module</h2>
+  </ng-content>
+  <ng-content subtitleTexts>
+    <pre><code class="language-html"><span class="hljs-tag"><span class="hljs-name">IMPORT</span> <span class="hljs-attr">ButtonComponent </span><span class="hljs-name">from </span> '../../../components/atoms/button/button.component';</span></code></pre>
+  </ng-content>
+  <ng-content titleTable1>
+    <H2>Properties</H2>
+  </ng-content>
+  <ng-content titleTable2>
+    <H2>Attributes</H2>
+  </ng-content>
+
+
+</app-template>
