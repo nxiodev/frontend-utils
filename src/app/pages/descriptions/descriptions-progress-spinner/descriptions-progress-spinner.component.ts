@@ -10,7 +10,7 @@ import { HighlightModule, HIGHLIGHT_OPTIONS } from 'ngx-highlightjs';
 @Component({
   selector: 'app-descriptions-button',
   standalone: true,
-  imports: [TemplateComponent, RouterModule, ProgressSpinnerComponent, HighlightModule], // Agregamos HighlightModule
+  imports: [TemplateComponent, RouterModule, HighlightModule], // Agregamos HighlightModule
   templateUrl: './descriptions-progress-spinner.component.html',
   styleUrl: './descriptions-progress-spinner.component.css',
   providers: [

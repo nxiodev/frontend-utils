@@ -10,7 +10,7 @@ import { HighlightModule, HIGHLIGHT_OPTIONS } from 'ngx-highlightjs';
 @Component({
   selector: 'app-descriptions-chips',
   standalone: true,
-  imports: [TemplateComponent, RouterModule, ChipsComponent, HighlightModule], // Agregamos HighlightModule
+  imports: [TemplateComponent, RouterModule, HighlightModule], // Agregamos HighlightModule
   templateUrl: './descriptions-chips.component.html',
   styleUrl: './descriptions-chips.component.css',
   providers: [

@@ -10,7 +10,7 @@ import { HighlightModule, HIGHLIGHT_OPTIONS } from 'ngx-highlightjs';
 @Component({
   selector: 'app-descriptions-card',
   standalone: true,
-  imports: [TemplateComponent, RouterModule, CardComponent, HighlightModule], // Agregamos HighlightModule
+  imports: [TemplateComponent, RouterModule, HighlightModule], // Agregamos HighlightModule
   templateUrl: './descriptions-card.component.html',
   styleUrl: './descriptions-card.component.css',
   providers: [

@@ -1,4 +1,6 @@
-<app-template [dataSource]="tableData" [attributeData]="attributeData">
+<app-template [dataSource]="tableData" [attributeData]="attributeData" title="Card"
+              subtitle="A styled container for pieces of itemized content"
+              imageUrl="https://material.angular.io/assets/screenshots/card.scene.png">
   <ng-content links>
     <a [routerLink]="['/']" class="subrayado">MarketPlace</a>
     <a class="separator"> > </a>
@@ -24,11 +26,6 @@
   <ng-content titleTable2>
     <H2>Attributes</H2>
   </ng-content>
-  <ng-content cardTitle><strong>Example</strong></ng-content>
-  <ng-content cardSubtitle><strong>Card</strong></ng-content>
-  <ng-content cardContent><app-card>
-    <ng-content cardTitle><h2>Card</h2></ng-content>
-    <ng-content cardSubtitle><a>ejemplo de uso de card</a></ng-content>
-  </app-card></ng-content>
+
 
 </app-template>

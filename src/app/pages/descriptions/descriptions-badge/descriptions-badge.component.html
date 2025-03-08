@@ -1,4 +1,6 @@
-<app-template [dataSource]="tableData" [attributeData]="attributeData">
+<app-template [dataSource]="tableData" [attributeData]="attributeData" [title]="cardtitle"
+              [subtitle]="cardsubtitle"
+              [imageUrl]="cardImage">
   <ng-content links>
     <a [routerLink]="['/']" class="subrayado">MarketPlace</a>
     <a class="separator"> > </a>
@@ -25,8 +27,6 @@
   <ng-content titleTable2>
     <H2>Attributes</H2>
   </ng-content>
-  <ng-content cardTitle><strong>Example</strong></ng-content>
-  <ng-content cardSubtitle><strong>Badge</strong></ng-content>
-  <ng-content cardContent><app-badge></app-badge></ng-content>
+
 
 </app-template>

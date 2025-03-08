@@ -11,7 +11,7 @@ import {CardComponent} from '../../../components/atoms/card/card.component';
 @Component({
   selector: 'app-descriptions-button',
   standalone: true,
-  imports: [TemplateComponent, RouterModule, ButtonComponent, HighlightModule, CardComponent], // Agregamos HighlightModule
+  imports: [TemplateComponent, RouterModule, HighlightModule], // Agregamos HighlightModule
   templateUrl: './descriptions-button.component.html',
   styleUrl: './descriptions-button.component.css',
   providers: [

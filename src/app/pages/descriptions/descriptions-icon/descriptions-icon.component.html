@@ -1,5 +1,8 @@
-<app-template [dataSource]="tableData" [attributeData]="attributeData">
-  <ng-content links>
+<app-template [dataSource]="tableData" [attributeData]="attributeData" title="Icon"
+              subtitle="Renders a specific icon."
+              imageUrl="https://material.angular.io/assets/screenshots/icon.scene.png">
+
+<ng-content links>
     <a [routerLink]="['/']" class="subrayado">MarketPlace</a>
     <a class="separator"> > </a>
     <a [routerLink]="['/descriptions']" class="subrayado">Descripciones</a>
@@ -24,8 +27,5 @@
   <ng-content titleTable2>
     <H2>Attributes</H2>
   </ng-content>
-  <ng-content cardTitle><strong>Example</strong></ng-content>
-  <ng-content cardSubtitle><strong>Icon</strong></ng-content>
-  <ng-content cardContent><app-icon></app-icon></ng-content>
 
 </app-template>

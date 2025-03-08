@@ -1,7 +1,7 @@
 .sidenav-container {
   height: 100%;
   display: flex;
-  background-color: #f44336;
+
 }
 
 mat-sidenav {
@@ -12,7 +12,7 @@ mat-sidenav {
   width: 15%;
   overflow-y: auto;   /* Permite que el contenido del sidenav tenga scroll */
   z-index: 100;
-  background-color: #4caf50;
+
 }
 
 .sidenav-content {
@@ -26,7 +26,7 @@ mat-sidenav {
   overflow-y: auto;   /* Permite que el contenido del main haga scroll independiente */
   height: 100%;
   width: 100%;
-  background-color: #4c59af;
+
 }
 
 .content {

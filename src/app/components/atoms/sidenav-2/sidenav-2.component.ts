@@ -7,7 +7,7 @@ import {RouterModule} from '@angular/router';
 
 @Component({
   selector: 'app-sidenav-2',
-  imports: [MatSidenav, MatSidenavContainer, MatNativeDateModule, MatButtonModule,
+  imports: [MatSidenav, MatNativeDateModule, MatButtonModule,
     CommonModule, MatSidenavModule, RouterModule],
   templateUrl: './sidenav-2.component.html',
   styleUrl: './sidenav-2.component.css'

@@ -34,10 +34,9 @@
     <ng-content body>
       <div class="fondo">
         <app-body [dataSource]="dataSource" [attributeData]="attributeData"
-                  title="{{title}}"
-                  subtitle="{{subtitle}}"
-                  imageUrl="{{imageUrl}}"
-                  HaveContent="{{HaveContent}}">
+                  [title]="title"
+                  [subtitle]="subtitle"
+                  [imageUrl]="imageUrl">
           <!--  -->
           <ng-content select="[topText]" topText></ng-content>
           <ng-content select="[titleTexts]" titleTexts></ng-content>

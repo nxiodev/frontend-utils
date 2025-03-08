@@ -10,7 +10,7 @@ import { HighlightModule, HIGHLIGHT_OPTIONS } from 'ngx-highlightjs';
 @Component({
   selector: 'app-descriptions-checkbox',
   standalone: true,
-  imports: [TemplateComponent, RouterModule, CheckboxComponent, HighlightModule], // Agregamos HighlightModule
+  imports: [TemplateComponent, RouterModule, HighlightModule], // Agregamos HighlightModule
   templateUrl: './descriptions-checkbox.component.html',
   styleUrl: './descriptions-checkbox.component.css',
   providers: [

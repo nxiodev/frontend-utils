@@ -1,5 +1,7 @@
-<app-template [dataSource]="tableData" [attributeData]="attributeData">
-  <ng-content links>
+<app-template [dataSource]="tableData" [attributeData]="attributeData" title="CheckBox"
+              subtitle="Captures boolean input with an optional indeterminate mode"
+              imageUrl="https://material.angular.io/assets/screenshots/checkbox.scene.png">
+<ng-content links>
     <a [routerLink]="['/']" class="subrayado">MarketPlace</a>
     <a class="separator"> > </a>
     <a [routerLink]="['/descriptions']" class="subrayado">Descripciones</a>
@@ -24,8 +26,4 @@
   <ng-content titleTable2>
     <H2>Attributes</H2>
   </ng-content>
-  <ng-content cardTitle><strong>Example</strong></ng-content>
-  <ng-content cardSubtitle><strong>Checkbox</strong></ng-content>
-  <ng-content cardContent><app-checkbox></app-checkbox></ng-content>
-
 </app-template>

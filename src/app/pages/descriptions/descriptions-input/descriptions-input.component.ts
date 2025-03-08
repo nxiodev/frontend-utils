@@ -10,7 +10,7 @@ import { HighlightModule, HIGHLIGHT_OPTIONS } from 'ngx-highlightjs';
 @Component({
   selector: 'app-descriptions-button',
   standalone: true,
-  imports: [TemplateComponent, RouterModule, InputComponent, HighlightModule], // Agregamos HighlightModule
+  imports: [TemplateComponent, RouterModule, HighlightModule], // Agregamos HighlightModule
   templateUrl: './descriptions-input.component.html',
   styleUrl: './descriptions-input.component.css',
   providers: [

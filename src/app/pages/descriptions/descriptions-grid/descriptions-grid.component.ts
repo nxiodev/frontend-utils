@@ -10,7 +10,7 @@ import { HighlightModule, HIGHLIGHT_OPTIONS } from 'ngx-highlightjs';
 @Component({
   selector: 'app-descriptions-grid',
   standalone: true,
-  imports: [TemplateComponent, RouterModule, GridComponent, HighlightModule], // Agregamos HighlightModule
+  imports: [TemplateComponent, RouterModule, HighlightModule], // Agregamos HighlightModule
   templateUrl: './descriptions-grid.component.html',
   styleUrl: './descriptions-grid.component.css',
   providers: [

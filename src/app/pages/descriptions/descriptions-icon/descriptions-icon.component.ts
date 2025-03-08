@@ -10,7 +10,7 @@ import { HighlightModule, HIGHLIGHT_OPTIONS } from 'ngx-highlightjs';
 @Component({
   selector: 'app-descriptions-icon',
   standalone: true,
-  imports: [TemplateComponent, RouterModule, IconComponent, HighlightModule], // Agregamos HighlightModule
+  imports: [TemplateComponent, RouterModule, HighlightModule], // Agregamos HighlightModule
   templateUrl: './descriptions-icon.component.html',
   styleUrl: './descriptions-icon.component.css',
   providers: [

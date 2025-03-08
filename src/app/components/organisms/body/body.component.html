@@ -15,14 +15,12 @@
   <ng-content select="[titleTable2]" titleTable2></ng-content>
 </app-text-table>
 
-<app-card-atom
-   title="{{title}}"
-   subtitle="{{subtitle}}"
-   imageUrl="{{imageUrl}}"
-   HaveContent="{{HaveContent}}">
-  <ng-content></ng-content>
+<app-full-card
+  [title]="title"
+  [subtitle]="subtitle"
+  [imageUrl]="imageUrl">
 
-</app-card-atom>
+</app-full-card>
 
 
 

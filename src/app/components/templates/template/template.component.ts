@@ -4,12 +4,12 @@ import {HeaderComponent} from '../../organisms/header/header.component';
 import {BodyComponent} from '../../organisms/body/body.component';
 import { AtomsStats } from '../../../models/atoms-stats.model';
 import {MatListItem} from '@angular/material/list';
-import {CardAtomComponent} from '../../molecules/card-atom/card-atom.component';
+import {FullCardComponent} from '../../molecules/full-card/full-card.component';
 
 @Component({
   selector: 'app-template',
   imports: [
-    RouterModule, HeaderComponent, BodyComponent, MatListItem, CardAtomComponent
+    RouterModule, HeaderComponent, BodyComponent, MatListItem, FullCardComponent
   ],
   templateUrl: './template.component.html',
   styleUrl: './template.component.css'
