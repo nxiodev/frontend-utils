@@ -6,7 +6,7 @@ import { ButtonComponent } from '../../../components/atoms/button/button.compone
 
 // Importa ngx-highlightjs
 import { HighlightModule, HIGHLIGHT_OPTIONS } from 'ngx-highlightjs';
-import {CardComponent} from '../../../components/atoms/card/card.component';
+import {CardComponent} from '../../../components/molecules/card/card.component';
 
 @Component({
   selector: 'app-descriptions-button',

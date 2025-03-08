@@ -9,9 +9,12 @@ import {NgIf} from '@angular/common';
   selector: 'app-card',
   templateUrl: 'card.component.html',
   styleUrl: 'card.component.css',
-  imports: [MatCardModule],
-  changeDetection: ChangeDetectionStrategy.OnPush, //OnPush
+  imports: [MatCardModule, NgIf],
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: true,
 })
 export class CardComponent {
-
+  @Input() image: string = '';
+  @Input() title: string = '';
+  @Input() description: string = '';
 }

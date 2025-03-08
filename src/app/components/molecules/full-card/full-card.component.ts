@@ -1,6 +1,6 @@
 import {Component, Input} from '@angular/core';
 import {ButtonComponent} from '../../atoms/button/button.component';
-import {CardComponent} from '../../atoms/card/card.component';
+import {CardComponent} from '../card/card.component';
 import {CardtitleComponent} from '../../atoms/cardtitle/cardtitle.component';
 import {CardsubtitleComponent} from '../../atoms/cardsubtitle/cardsubtitle.component';
 import {CardimageComponent} from '../../atoms/cardimage/cardimage.component';

@@ -6,6 +6,7 @@ import { MatButtonModule } from '@angular/material/button'; // Importa MatIconMo
   selector: 'app-button',
   imports: [MatIconModule, MatButtonModule],
   templateUrl: './button.component.html',
+  standalone: true,
   styleUrl: './button.component.css'
 })
 export class ButtonComponent {

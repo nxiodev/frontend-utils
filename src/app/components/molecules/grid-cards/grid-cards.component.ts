@@ -1,6 +1,6 @@
 import {Component, ViewChild, TemplateRef, OnInit, Input} from '@angular/core';
-import {GridComponent} from '../../atoms/grid/grid.component';
-import {CardComponent} from '../../atoms/card/card.component';
+import {GridComponent} from '../grid/grid.component';
+import {CardComponent} from '../card/card.component';
 import {RouterLink, RouterLinkActive} from '@angular/router';
 import {MatCardImage} from '@angular/material/card';
 import {NgOptimizedImage} from '@angular/common';

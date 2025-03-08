@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ButtonComponent } from '../../../components/atoms/button/button.component';
 import { BadgeComponent } from '../../../components/atoms/badge/badge.component';
-import { CardComponent } from '../../../components/atoms/card/card.component';
+import { CardComponent } from '../../../components/molecules/card/card.component';
 import { InputComponent } from '../../../components/atoms/input/input.component';
 import { ChipsComponent } from '../../../components/atoms/chips/chips.component';
 import { CheckboxComponent } from '../../../components/atoms/checkbox/checkbox.component';

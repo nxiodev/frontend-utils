@@ -1,0 +1,5 @@
+<mat-card>
+  <img *ngIf="image" [src]="image" alt="Card image">
+  <mat-card-title *ngIf="title">{{ title }}</mat-card-title>
+  <mat-card-content *ngIf="description">{{ description }}</mat-card-content>
+</mat-card>

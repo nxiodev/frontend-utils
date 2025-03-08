@@ -1,5 +1,7 @@
 import { Routes } from '@angular/router';
 import { GalleryComponent} from './pages/gallery/gallery/gallery.component';
+import { HomeComponent} from './pages/home/home.component';
+
 import {DescriptionsComponent} from './pages/descriptions/descriptions/descriptions.component';
 import {DescriptionsButtonComponent} from './pages/descriptions/descriptions-button/descriptions-button.component';
 import { DescriptionsBadgeComponent } from './pages/descriptions/descriptions-badge/descriptions-badge.component';
@@ -11,7 +13,7 @@ import { DescriptionsProgressSpinnerComponent} from './pages/descriptions/descri
 import { DescriptionsIconComponent } from './pages/descriptions/descriptions-icon/descriptions-icon.component';
 import {DescriptionsChipsComponent } from './pages/descriptions/descriptions-chips/descriptions-chips.component';
 export const routes: Routes = [
-  { path: '', component: GalleryComponent },
+  { path: '', component: HomeComponent },
   { path: 'descriptions', component: DescriptionsComponent },
   { path: 'descriptions/button', component: DescriptionsButtonComponent },
   { path: 'descriptions/badge', component: DescriptionsBadgeComponent },

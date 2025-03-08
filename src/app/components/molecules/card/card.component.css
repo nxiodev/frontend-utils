@@ -1,4 +1,4 @@
-.example-card {
+mat-card {
   max-width: 650px;
   margin-bottom: 8px;
   align-content: center;
@@ -6,5 +6,8 @@
   align-items: center;
   padding: 16px;
   box-sizing: border-box;
+  width: 360px;
+  height: 340px;
+  vertical-align: center
 }
 

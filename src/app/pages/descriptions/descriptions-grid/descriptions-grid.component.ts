@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { TemplateComponent } from '../../../components/templates/template/template.component';
 import { RouterModule } from '@angular/router';
 import { AtomsStats } from '../../../models/atoms-stats.model';
-import { GridComponent} from '../../../components/atoms/grid/grid.component';
+import { GridComponent} from '../../../components/molecules/grid/grid.component';
 
 // Importa ngx-highlightjs
 import { HighlightModule, HIGHLIGHT_OPTIONS } from 'ngx-highlightjs';
