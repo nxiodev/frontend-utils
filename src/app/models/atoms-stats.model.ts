@@ -4,7 +4,4 @@ export interface AtomsStats {
   description: string;
 }
 
-export interface AtomsAttributes {
-  attribute: string;
-  description: string;
-}
+

@@ -1,32 +1,18 @@
-<app-sidenav>
-
-  <h1>Botón</h1>
-  <app-button></app-button>
-  <br>
-  <h1>Badge</h1>
-  <app-badge></app-badge>
-  <br>
-  <h1>Card</h1>
-  <app-card title="Card" ></app-card>
-  <br>
-  <h1>Input</h1>
-  <app-input></app-input>
-  <br>
-  <h1>Grid</h1>
-  <!-- <app-grid [cols]="3" [rowHeight]="'200px'" [grids]="gridTemplates"></app-grid> -->
-  <br>
-  <h1>Chips</h1>
-  <app-chips></app-chips>
-  <br>
-  <h1>Checkbox</h1>
-  <app-checkbox></app-checkbox>
-  <br>
-  <h1>Progress spinner </h1>
-  <app-progress-spinner></app-progress-spinner>
-  <br>
-  <h1>Icon</h1>
-  <app-icon></app-icon>
-  <br>
-  <h1>Table</h1>
-  <app-table [dataSource]="tableData"></app-table>
-</app-sidenav>
+<div *ngFor="let vista of vistas">
+      <app-template
+        [dataSource]="vista.dataSource"
+        [image]="vista.image"
+        [titlePrimario]="vista.titlePrimario"
+        [description]="vista.description"
+        [titleTexts]="vista.titleTexts"
+        [topText]="vista.topText"
+        [titleTable1]="vista.titleTable1"
+        [title2]="vista.title2"
+        [subtitle2]="vista.subtitle2"
+        [imageUrl2]="vista.imageUrl2"
+        [titleTexts2]="vista.titleTexts2"
+        [links]="vista.links"
+        [breads]="vista.breads"
+        [title]="vista.title">
+      </app-template>
+    </div>

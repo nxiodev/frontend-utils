@@ -13,5 +13,5 @@ import {CommonModule} from '@angular/common';
 })
 export class TextTableComponent {
   @Input() dataSource: AtomsStats[] = [];
-  @Input() attributeData: AtomsStats[] = [];
+  @Input() titleTable1: string = '';
 }

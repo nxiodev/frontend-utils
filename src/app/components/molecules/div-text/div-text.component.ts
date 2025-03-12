@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
 
 @Component({
   selector: 'app-div-text',
@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './div-text.component.css'
 })
 export class DivTextComponent {
-
+  @Input() topText: string = '';
 }

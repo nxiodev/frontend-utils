@@ -1,0 +1,11 @@
+  <mat-sidenav #sidenav mode="side" opened class="sidenav-scroll">
+    <div *ngFor="let link of links" >
+      <a mat-list-item [routerLink]="link.url" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
+        {{link.name}}
+      </a>
+    </div>
+  </mat-sidenav>
+
+
+
+

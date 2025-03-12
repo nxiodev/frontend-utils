@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
 import {CardComponent} from '../card/card.component';
 
 @Component({
@@ -10,5 +10,9 @@ import {CardComponent} from '../card/card.component';
   styleUrl: './texts.component.css'
 })
 export class TextsComponent {
-
+  @Input() image:string = '';
+  @Input() title:string = '';
+  @Input() description:string = '';
+  @Input() titleTexts:string = '';
 }
+

@@ -1,26 +1,21 @@
-<app-div-text>
-  <ng-content select="[topText]" topText></ng-content>
+<app-div-text [topText] = "topText">
+
 </app-div-text>
 
-<app-texts>
-  <ng-content select="[titleTexts]" titleTexts></ng-content>
-  <ng-content select="[subtitleTexts]" subtitleTexts></ng-content>
+<app-texts [image]="image" [title]="title" [description]="description" [titleTexts]="titleTexts">
+
 </app-texts>
 
-<app-text-table [dataSource]="dataSource">
-  <ng-content select="[titleTable1]" titleTable1></ng-content>
+<app-text-table [dataSource]="dataSource" [titleTable1] = titleTable1>
 </app-text-table>
 
-<app-text-table [attributeData]="attributeData">
-  <ng-content select="[titleTable2]" titleTable2></ng-content>
-</app-text-table>
-
-<app-full-card
-  [title]="title"
-  [subtitle]="subtitle"
-  [imageUrl]="imageUrl">
-
-</app-full-card>
+<!--TODO: Add more tables if needed-->
+<app-texts
+  [title]="title2"
+  [image]="subtitle2"
+  [description]="imageUrl2"
+  [titleTexts]="titleTexts2">
+</app-texts>
 
 
 

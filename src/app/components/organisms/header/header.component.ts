@@ -1,17 +1,15 @@
-import { Component } from '@angular/core';
-import {ToolbarComponent} from '../../atoms/toolbar/toolbar.component';
-import {BreadcrumbComponent} from '../../atoms/breadcrumb/breadcrumb.component';
-import {SidenavComponent} from '../../atoms/sidenav/sidenav.component';
-import {MatNavList} from '@angular/material/list';
-
+import { Component, Input } from '@angular/core';
+import { BreadcrumbComponent } from '../../molecules/breadcrumb/breadcrumb.component';
 
 @Component({
   selector: 'app-header',
-  imports: [ToolbarComponent, BreadcrumbComponent, SidenavComponent, MatNavList],
+  imports: [BreadcrumbComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
-
 })
 export class HeaderComponent {
-
+  @Input() title: string = '';
+  @Input() breads: { url: string, name: string }[] = [];
 }
+
+//TODO: Revisar si funciona BREADS
