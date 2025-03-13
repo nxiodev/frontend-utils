@@ -1,4 +1,5 @@
 <div *ngFor="let vista of vistas">
+  <!--TODO: poner un ngIf para que solo se muestre el componente necesario-->
       <app-template
         [dataSource]="vista.dataSource"
         [image]="vista.image"
@@ -15,4 +16,4 @@
         [breads]="vista.breads"
         [title]="vista.title">
       </app-template>
-    </div>
+  </div>

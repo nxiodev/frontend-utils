@@ -12,7 +12,8 @@ import {CommonModule} from '@angular/common';
   standalone: true,
 })
 export class CardGridComponent {
-  @Input() cards: { image: string, title: string, description: string }[] = [];
+  @Input() cards: { image: string, title: string, description: string}[] = [];
   @Input() cols: number = 3;
   @Input() rowHeight: string = '1:1';
+
 }

@@ -1,6 +1,6 @@
 import {
   SelectionModel
-} from "./chunk-V4BWBRNY.js";
+} from "./chunk-KZVJLUZR.js";
 import {
   A,
   CdkObserveContent,
@@ -16,18 +16,18 @@ import {
   _CdkPrivateStyleLoader,
   _StructuralStylesLoader,
   hasModifierKey
-} from "./chunk-FFVNY4SD.js";
+} from "./chunk-K2FOC5KC.js";
 import {
   Platform,
   _getFocusedElementPierceShadowDom,
   coerceBooleanProperty,
   coerceNumberProperty
-} from "./chunk-NVFO47AH.js";
-import "./chunk-WCUEMVB7.js";
+} from "./chunk-XAVWAWAE.js";
+import "./chunk-7MSRQ37Y.js";
 import {
   NgTemplateOutlet,
   getDOM
-} from "./chunk-AVHTRRAC.js";
+} from "./chunk-KBOAPL3B.js";
 import {
   ANIMATION_MODULE_TYPE,
   ChangeDetectionStrategy,
@@ -56,6 +56,8 @@ import {
   Version,
   ViewChild,
   ViewEncapsulation,
+  __spreadProps,
+  __spreadValues,
   booleanAttribute,
   computed,
   forkJoin,
@@ -104,11 +106,7 @@ import {
   ɵɵtemplate,
   ɵɵtemplateRefExtractor,
   ɵɵviewQuery
-} from "./chunk-KE2I6GZG.js";
-import {
-  __spreadProps,
-  __spreadValues
-} from "./chunk-WDMUDEB6.js";
+} from "./chunk-DRCFMEAQ.js";
 
 // node_modules/@angular/material/fesm2022/divider.mjs
 var MatDivider = class _MatDivider {
