@@ -1,19 +1,20 @@
 <div *ngFor="let vista of vistas">
-  <!--TODO: poner un ngIf para que solo se muestre el componente necesario-->
-      <app-template
-        [dataSource]="vista.dataSource"
-        [image]="vista.image"
-        [titlePrimario]="vista.titlePrimario"
-        [description]="vista.description"
-        [titleTexts]="vista.titleTexts"
-        [topText]="vista.topText"
-        [titleTable1]="vista.titleTable1"
-        [title2]="vista.title2"
-        [subtitle2]="vista.subtitle2"
-        [imageUrl2]="vista.imageUrl2"
-        [titleTexts2]="vista.titleTexts2"
-        [links]="vista.links"
-        [breads]="vista.breads"
-        [title]="vista.title">
-      </app-template>
-  </div>
+      <div *ngIf="type?.toLowerCase() === vista.title.toLowerCase()">
+        <app-template
+          [dataSource]="vista.dataSource"
+          [image]="vista.image"
+          [titlePrimario]="vista.titlePrimario"
+          [description]="vista.description"
+          [titleTexts]="vista.titleTexts"
+          [topText]="vista.topText"
+          [titleTable1]="vista.titleTable1"
+          [title2]="vista.title2"
+          [subtitle2]="vista.subtitle2"
+          [imageUrl2]="vista.imageUrl2"
+          [titleTexts2]="vista.titleTexts2"
+          [links]="vista.links"
+          [breads]="vista.breads"
+          [title]="vista.title">
+        </app-template>
+      </div>
+    </div>

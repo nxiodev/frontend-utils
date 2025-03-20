@@ -11,9 +11,9 @@ import { Component, Input } from '@angular/core';
     })
     export class HomeTemplateComponent {
       @Input() cards = [
-        { image: 'http://imagen.jpg', title: 'Card 1', description: 'Description 1' },
-        { image: 'path/to/image2.jpg', title: 'Card 2', description: 'Description 2' },
-        { image: 'path/to/image3.jpg', title: 'Card 3', description: 'Description 3' }
+        { image: 'http://imagen.jpg', title: 'Card 1', description: 'Description 1',link: '/descriptions/button' },
+        { image: 'path/to/image2.jpg', title: 'Card 2', description: 'Description 2', link: '/descriptions/card' },
+        { image: 'path/to/image3.jpg', title: 'Card 3', description: 'Description 3', link: '/descriptions/card' },
       ];
       @Input() label: string = 'HomeApp';
       @Input() icon: string = 'home';
