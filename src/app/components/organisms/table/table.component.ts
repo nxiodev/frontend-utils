@@ -12,6 +12,7 @@ import { AtomsStats } from '../../../models/atoms-stats.model';
 })
 export class TableComponent {
   @Input() dataSource: AtomsStats[] = [];
+  @Input() titleTable1!: string;
 
   get displayedColumns(): string[] {
     return this.dataSource.some(element => element.default !== '')

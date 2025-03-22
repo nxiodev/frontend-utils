@@ -1,0 +1,8 @@
+<mat-chip-set aria-label="Dog selection">
+  <app-chips
+    *ngFor="let chip of chips"
+    [imageSrc]="chip.imageSrc"
+    [imageAlt]="chip.imageAlt"
+    [chipLabel]="chip.chipLabel"
+  ></app-chips>
+</mat-chip-set>

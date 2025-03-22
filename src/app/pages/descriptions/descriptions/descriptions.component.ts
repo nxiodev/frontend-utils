@@ -4,6 +4,7 @@ import { Component, Input, OnInit } from '@angular/core';
       import { AtomsStats } from '../../../models/atoms-stats.model';
       import { TemplateComponent } from '../../../components/templates/template/template.component';
 
+
       @Component({
         selector: 'app-descriptions',
         imports: [
