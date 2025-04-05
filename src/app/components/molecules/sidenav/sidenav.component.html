@@ -1,11 +1,27 @@
-  <mat-sidenav #sidenav mode="side" opened class="sidenav-scroll">
-    <div *ngFor="let link of links" >
-      <a mat-list-item [routerLink]="link.url" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
-        {{link.name}}
+<mat-sidenav-container class="sidenav-container">
+
+  <!-- Sidenav controlado por el servicio -->
+  <mat-sidenav #sidenav [mode]="isMobile ? 'over' : 'side'" [(opened)]="isSidenavOpen" class="sidenav-scroll">
+    <app-button (click)="toggleSidenav()" class="dentroLayout">
+      <app-icon>menu</app-icon>
+    </app-button>
+
+    <div *ngFor="let link of links" class="marginLink">
+      <a mat-list-item [routerLink]="link.url" routerLinkActive="active-link"
+         [routerLinkActiveOptions]="{exact: true}" (click)="onLinkClick()">
+        {{ link.name }}
       </a>
     </div>
   </mat-sidenav>
 
+  <mat-sidenav-content class="main-content">
+    <!-- Botón para abrir/cerrar sidenav -->
+    <app-button (click)="toggleSidenav()" class="fueraLayout">
+      <app-icon>menu</app-icon>
+    </app-button>
 
-
-
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

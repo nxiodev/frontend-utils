@@ -1,5 +1,4 @@
-<div style="margin-left: 15%">
-  <!--TODO: Class of the margin-->
-<app-breadcrumb [breads]="breads"></app-breadcrumb>
-  <h1>{{title}}</h1>
+<div [ngClass]="{'dimensiones-inicial': isSidenavOpen === 0, 'dimensiones-cerrar': isSidenavOpen === 1, 'dimensiones-abrir': isSidenavOpen === 2}">
+  <app-breadcrumb [breads]="breads"></app-breadcrumb>
+  <h1 style="margin-left: 2%">{{title}}</h1>
 </div>

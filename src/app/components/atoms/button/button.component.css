@@ -1,56 +1,42 @@
-section {
-  display: table;
-  width: 100%; /* Asegura que ocupe todo el ancho disponible */
-}
-
-.example-label {
-  display: table-cell;
-  font-size: 14px;
-  margin-left: 8px;
-  min-width: 120px;
-  color: #333; /* Color de texto más oscuro */
-}
-
-.example-button-row {
-  display: table-cell;
-  max-width: 600px;
-}
-
-.example-button-row .mat-mdc-button-base {
-  margin: 8px 8px 8px 0;
-  padding: 10px 20px; /* Añadir padding para mejorar la apariencia */
-  background-color: #007bff; /* Color de fondo atractivo */
-  color: white; /* Texto blanco */
-  border-radius: 8px; /* Bordes redondeados */
-  border: none; /* Eliminar borde predeterminado */
-  font-size: 16px; /* Aumentar el tamaño del texto para mejorar la legibilidad */
-  transition: background-color 0.3s, transform 0.2s; /* Transición suave para hover */
-}
-
-.example-button-row .mat-mdc-button-base:hover {
-  background-color: #0056b3; /* Cambio de color al pasar el mouse */
-  transform: translateY(-2px); /* Efecto de desplazamiento al pasar el mouse */
-}
-
-.example-button-row .mat-mdc-button-base:active {
-  background-color: #004085; /* Color al presionar */
-  transform: translateY(0); /* Restablece el desplazamiento */
-}
-
-.example-flex-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 20px; /* Espaciado entre elementos */
-  margin-bottom: 20px; /* Espacio inferior */
-}
-
-.example-button-container {
-  display: flex;
+/* From Uiverse.io by Kabak */
+button {
+  height: 50px;
+  margin: 5px;
+  width: 120px;
+  background: #333;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
-  width: 140px;
+  cursor: pointer;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: Consolas, Courier New, monospace;
+  border: solid #404c5d 1px;
+  font-size: 16px;
+  color: rgb(161, 161, 161);
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  border-radius: 5px;
+  background: linear-gradient(145deg, #2e2d2d, #212121);
+  -webkit-box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
+  inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
+  box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
+  inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
 }
 
-.example-button-container .mat-mdc-button-base {
-  width: 100%; /* Hace que el botón ocupe todo el ancho disponible dentro del contenedor */
+button:hover {
+  -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+  box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+  color: #d6d6d6;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+button:active {
+  -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
+  box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
+  color: #d6d6d6;
+  -webkit-transition: 100ms;
+  transition: 100ms;
 }

@@ -10,4 +10,11 @@ mat-card {
   height: 340px;
   vertical-align: center
 }
+@media (max-width: 768px) {
+  .englobar {
+    display: flex;
+    justify-content: center;
+  }
+
+}
 

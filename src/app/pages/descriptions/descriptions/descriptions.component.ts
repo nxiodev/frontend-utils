@@ -9,7 +9,7 @@ import { Component, Input, OnInit } from '@angular/core';
         selector: 'app-descriptions',
         imports: [
           CommonModule,
-          TemplateComponent
+          TemplateComponent,
         ],
         templateUrl: './descriptions.component.html',
         styleUrl: './descriptions.component.css',
@@ -317,6 +317,20 @@ import { Component, Input, OnInit } from '@angular/core';
         ];
 
         type: string | null = null;
+        // EstiloNuevo: string = 'width: 50px;\n' +
+        //   '  height: 50px;\n' +
+        //   '  border-radius: 50%;\n' +
+        //   '  background-color: rgb(20, 20, 20);\n' +
+        //   '  border: none;\n' +
+        //   '  font-weight: 600;\n' +
+        //   '  display: flex;\n' +
+        //   '  align-items: center;\n' +
+        //   '  justify-content: center;\n' +
+        //   '  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);\n' +
+        //   '  cursor: pointer;\n' +
+        //   '  transition-duration: .3s;\n' +
+        //   '  overflow: hidden;\n' +
+        //   '  position: relative;';
 
         constructor(private route: ActivatedRoute) {}
 

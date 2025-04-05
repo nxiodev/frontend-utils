@@ -1,22 +1,22 @@
-<app-div-text [topText] = "topText">
+<div [ngClass]="{'body-inicial': isSidenavOpen === 0, 'body-cerrar': isSidenavOpen === 1, 'body-abrir': isSidenavOpen === 2}"><!--TODO: add a class for the margin-->
+  <app-div-text [topText] = "topText">
 
-</app-div-text>
+  </app-div-text>
 
-<app-texts [image]="image" [title]="title" [description]="description" [titleTexts]="titleTexts">
+  <app-texts [image]="image" [title]="title" [description]="description" [titleTexts]="titleTexts">
 
-</app-texts>
+  </app-texts>
 
-<app-table [dataSource]="dataSource" [titleTable1] = titleTable1>
-</app-table>
+  <app-table [dataSource]="dataSource" [titleTable1] = titleTable1>
+  </app-table>
 
-<!--TODO: Add more tables if needed-->
-<app-texts
-  [title]="title2"
-  [image]="imageUrl2"
-  [description]="subtitle2"
-  [titleTexts]="titleTexts2">
-</app-texts>
-
-
+  <!--TODO: Add more tables if needed-->
+  <app-texts
+    [title]="title2"
+    [image]="imageUrl2"
+    [description]="subtitle2"
+    [titleTexts]="titleTexts2">
+  </app-texts>
+</div>
 
 

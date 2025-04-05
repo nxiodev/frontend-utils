@@ -1,9 +1,9 @@
 import {
   NG_VALUE_ACCESSOR
-} from "./chunk-CFP4GXGY.js";
+} from "./chunk-AMAM22VB.js";
 import {
   SelectionModel
-} from "./chunk-KZVJLUZR.js";
+} from "./chunk-42XORLPV.js";
 import {
   A,
   CdkObserveContent,
@@ -16,22 +16,20 @@ import {
   ObserversModule,
   RippleRenderer,
   SPACE,
+  _CdkPrivateStyleLoader,
   _StructuralStylesLoader,
   hasModifierKey
-} from "./chunk-PJE3K77Z.js";
-import {
-  _CdkPrivateStyleLoader
-} from "./chunk-3MBYO22Y.js";
+} from "./chunk-S2KLNV5G.js";
 import {
   Platform,
   _getFocusedElementPierceShadowDom,
   coerceBooleanProperty,
   coerceNumberProperty
-} from "./chunk-IES5CNGQ.js";
-import "./chunk-7MSRQ37Y.js";
+} from "./chunk-VSVY235I.js";
+import "./chunk-QTSNZV7T.js";
 import {
   NgTemplateOutlet
-} from "./chunk-KBOAPL3B.js";
+} from "./chunk-KOO6HHSS.js";
 import {
   ANIMATION_MODULE_TYPE,
   ChangeDetectionStrategy,
@@ -48,15 +46,11 @@ import {
   NgZone,
   Output,
   Renderer2,
-  Subject,
-  Subscription,
   ViewChild,
   ViewEncapsulation,
   forwardRef,
   inject,
-  merge,
   setClassMetadata,
-  takeUntil,
   ɵɵInheritDefinitionFeature,
   ɵɵNgOnChangesFeature,
   ɵɵProvidersFeature,
@@ -89,7 +83,13 @@ import {
   ɵɵtemplate,
   ɵɵtemplateRefExtractor,
   ɵɵviewQuery
-} from "./chunk-DRCFMEAQ.js";
+} from "./chunk-VU6X2Q5G.js";
+import {
+  Subject,
+  Subscription,
+  merge,
+  takeUntil
+} from "./chunk-5TID76VL.js";
 
 // node_modules/@angular/material/fesm2022/divider.mjs
 var MatDivider = class _MatDivider {
