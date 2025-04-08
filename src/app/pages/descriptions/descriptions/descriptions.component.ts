@@ -3,6 +3,7 @@ import { Component, Input, OnInit } from '@angular/core';
       import { CommonModule } from '@angular/common';
       import { AtomsStats } from '../../../models/atoms-stats.model';
       import { TemplateComponent } from '../../../components/templates/template/template.component';
+import {DivComponent} from '../../../components/atoms/div/div.component';
 
 
       @Component({
@@ -10,6 +11,7 @@ import { Component, Input, OnInit } from '@angular/core';
         imports: [
           CommonModule,
           TemplateComponent,
+          DivComponent,
         ],
         templateUrl: './descriptions.component.html',
         styleUrl: './descriptions.component.css',

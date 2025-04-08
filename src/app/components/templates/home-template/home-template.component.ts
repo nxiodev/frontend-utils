@@ -1,13 +1,14 @@
 import { Component, Input } from '@angular/core';
     import { CardGridComponent } from '../../organisms/card-grid/card-grid.component';
     import { NavbarComponent } from '../../organisms/navbar/navbar.component';
+import {DivComponent} from '../../atoms/div/div.component';
 
     @Component({
       selector: 'app-home-template',
       templateUrl: './home-template.component.html',
       styleUrls: ['./home-template.component.css'],
       standalone: true,
-      imports: [CardGridComponent, NavbarComponent]
+      imports: [CardGridComponent, NavbarComponent, DivComponent]
     })
     export class HomeTemplateComponent {
       @Input() cards = [

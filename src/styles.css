@@ -1,5 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-.subrayado {text-decoration: none; color: inherit; margin: 0 5px;} /*Usado en los breadcrumbs*/
+body {
+  margin: 0;
+  font-family: 'sans-serif', 'Segoe UI', sans-serif;
+}
+.subrayado {
+  text-decoration: none;
+  color: inherit;
+  margin: 0 5px;
+} /* Usado en los breadcrumbs */
+
+/* Body component classes - moved here to be globally accessible */
+.body-inicial{
+  border-top: 3px solid #e2e8f0;
+  padding-top: 10px;
+  padding-left: 15%;
+  background-color: #f1f5f9;
+}
+
+.body-abrir{
+  border-top: 3px solid #e2e8f0;
+  padding-top: 10px;
+  padding-left: 17%;
+  transition: padding-left 0.18s ease-in-out;
+  background-color: #f1f5f9;
+}
+
+.body-cerrar{
+  border-top: 3px solid #e2e8f0;
+  padding-top: 10px;
+  padding-left: 2%;
+  transition: padding-left 0.185s ease-in-out;
+  background-color: #f1f5f9;
+}
+
+.dimensiones-inicial {
+  margin-left: 15%;
+}
+
+.dimensiones-abrir {
+  margin-left: 15%;
+  transition: margin-left 0.18s ease-in-out;
+
+}
+
+.dimensiones-cerrar {
+  margin-left: 0%;
+  transition: margin-left 0.185s ease-in-out;
+}

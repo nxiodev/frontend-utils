@@ -9,14 +9,15 @@ import { MatListItem } from '@angular/material/list';
 import { MatIcon } from '@angular/material/icon';
 import { ButtonComponent } from '../../atoms/button/button.component';
 import { SidenavService} from '../../../services/sidenav.service';
-import {IconComponent} from '../../atoms/icon/icon.component'; // Importar el servicio
+import {IconComponent} from '../../atoms/icon/icon.component';
+import {DivComponent} from '../../atoms/div/div.component'; // Importar el servicio
 
 @Component({
   selector: 'app-sidenav',
   standalone: true,
   imports: [
     MatSidenav, MatNativeDateModule, MatButtonModule,
-    CommonModule, MatSidenavModule, RouterModule, MatListItem, ButtonComponent, IconComponent
+    CommonModule, MatSidenavModule, RouterModule, MatListItem, ButtonComponent, IconComponent, DivComponent
   ],
   templateUrl: 'sidenav.component.html',
   styleUrl: 'sidenav.component.css'

@@ -8,8 +8,9 @@
 }
 
 .marginLink{
-  margin-top: 15%;
+  margin-top: 8%;
 }
+
 mat-sidenav {
   position: fixed;
   top: 0;
@@ -26,6 +27,7 @@ mat-sidenav {
   overflow-y: auto;
   height: 100%;
   width: 100%;
+  background-color: white;
 }
 
 mat-sidenav a {

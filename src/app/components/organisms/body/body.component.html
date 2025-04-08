@@ -1,4 +1,4 @@
-<div [ngClass]="{'body-inicial': isSidenavOpen === 0, 'body-cerrar': isSidenavOpen === 1, 'body-abrir': isSidenavOpen === 2}"><!--TODO: add a class for the margin-->
+<app-div [ngClass]="{'body-inicial': isSidenavOpen === 0, 'body-cerrar': isSidenavOpen === 1, 'body-abrir': isSidenavOpen === 2}"><!--TODO: add a class for the margin-->
   <app-div-text [topText] = "topText">
 
   </app-div-text>
@@ -17,6 +17,4 @@
     [description]="subtitle2"
     [titleTexts]="titleTexts2">
   </app-texts>
-</div>
-
-
+</app-div>

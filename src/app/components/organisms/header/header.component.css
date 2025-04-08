@@ -1,13 +1,3 @@
-.dimensiones-inicial {
-  margin-left: 15%;
-}
-
-.dimensiones-abrir {
-  margin-left: 15%;
-  transition: margin-left 0.18s ease-in-out;
-}
-
-.dimensiones-cerrar {
-  margin-left: 0%;
-  transition: margin-left 0.185s ease-in-out;
+.Titulo{
+  margin-left: 2%
 }

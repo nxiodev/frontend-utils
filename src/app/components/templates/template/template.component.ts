@@ -3,7 +3,7 @@ import { Component, Input, OnInit, OnDestroy } from '@angular/core';
     import { HeaderComponent } from '../../organisms/header/header.component';
     import { BodyComponent } from '../../organisms/body/body.component';
     import { AtomsStats } from '../../../models/atoms-stats.model';
-    import { SidenavComponent } from '../../molecules/sidenav/sidenav.component';
+    import { SidenavComponent } from '../../organisms/sidenav/sidenav.component';
     import { SidenavService } from '../../../services/sidenav.service';
     import { Subscription } from 'rxjs';
 import {NgIf} from '@angular/common';

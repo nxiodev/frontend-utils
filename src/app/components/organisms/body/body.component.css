@@ -5,15 +5,25 @@
 }
 
 .body-inicial{
-  margin-left: 15%;
+  border-top: 3px solid #e2e8f0;
+  padding-top: 10px;
+  padding-left: 15%;
+  background-color: #f1f5f9;
+
 }
 
 .body-abrir{
-  margin-left: 17%;
-  transition: margin-left 0.18s ease-in-out;
+  border-top: 3px solid #e2e8f0;
+  padding-top: 10px;
+  padding-left: 17%;
+  transition: padding-left 0.18s ease-in-out;
+  background-color: #f1f5f9;
 }
 
 .body-cerrar{
-  margin-left: 2%;
-  transition: margin-left 0.185s ease-in-out;
+  border-top: 3px solid #e2e8f0;
+  padding-top: 10px;
+  padding-left: 2%;
+  transition: padding-left 0.185s ease-in-out;
+  background-color: #f1f5f9;
 }
