@@ -1,32 +1,28 @@
 mat-form-field {
   width: 100%;
-  margin: 10px 0;
-  padding: 5px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
+  margin-bottom: 20px;
 }
 
-mat-label {
-  color: #333;
-  font-size: 14px;
+.mat-form-field-appearance-fill .mat-form-field-flex {
+  background-color: #ffffff;        /* Fondo blanco */
+  border-radius: 10px;              /* Bordes redondeados */
+  padding: 0 12px;
+  border: 1px solid #ccc;           /* Borde gris claro */
 }
 
-mat-input {
-  font-size: 16px;
-  padding: 10px;
-  border-radius: 4px;
+.mat-form-field-appearance-fill .mat-form-field-outline,
+.mat-form-field-underline {
+  display: none !important;         /* Quita la línea negra de abajo */
 }
 
-mat-icon {
-  color: #3f51b5;
-  font-size: 24px;
+input.mat-input-element {
+  font-size: 1rem;
+  padding: 12px 0;
+  color: #333;                      /* Texto gris oscuro */
+  background: transparent;
 }
 
-mat-hint {
-  color: #888;
-  font-size: 12px;
-}
-
-mat-form-field:hover {
-  box-shadow: 0 0 10px rgba(63, 81, 181, 0.3);
+.mat-form-field-label {
+  color: #666;
+  font-size: 0.95rem;
 }
