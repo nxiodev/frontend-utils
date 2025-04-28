@@ -5,6 +5,10 @@
 .sidenav-container {
   height: 100%;
   display: flex;
+
+}
+colorSidenav{
+
 }
 
 .marginLink{
@@ -19,6 +23,7 @@ mat-sidenav {
   width: 15%;
   overflow-y: auto;
   z-index: 100;
+  background-color: #fcf4fc;
 }
 
 .main-content {
@@ -30,7 +35,29 @@ mat-sidenav {
   background-color: white;
 }
 
-mat-sidenav a {
+.quitarLinkNormal {
+  display: block;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: #000;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.quitarLinkIcono {
+  display: flex;
+  padding: 12px 100px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.quitarLinkIconoTexto {
   display: block;
   padding: 12px 16px;
   text-decoration: none;
@@ -48,6 +75,15 @@ mat-sidenav a.active-link {
   font-weight: bold;
   background-color: #e0e0e0;
 }
+.centrado{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+app-universal-icon{
+  width: 100%;
+}
 
 /* Responsive styles for mobile devices */
 @media (max-width: 768px) {
@@ -61,7 +97,9 @@ mat-sidenav a.active-link {
     margin-left: 0;
   }
   .dentroLayout{
+    width: 10%;
     display: flex;
     margin-top: 5%;
+    margin-left: 3%;
   }
 }

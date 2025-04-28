@@ -4,12 +4,11 @@ import {MatButtonModule} from '@angular/material/button';
 import {RouterModule} from '@angular/router';
 import {ToolbarComponent} from '../../atoms/toolbar/toolbar.component';
 import {NgForOf} from '@angular/common';
-import {DivComponent} from '../../atoms/div/div.component';
 import {AComponent} from '../../atoms/a/a.component';
 
 @Component({
   selector: 'app-breadcrumb',
-  imports: [MatToolbarModule, MatButtonModule, RouterModule, ToolbarComponent, NgForOf, DivComponent, AComponent],
+  imports: [MatToolbarModule, MatButtonModule, RouterModule, ToolbarComponent, NgForOf, AComponent],
   templateUrl: './breadcrumb.component.html',
   styleUrl: './breadcrumb.component.css'
 })

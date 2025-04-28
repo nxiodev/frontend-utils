@@ -1,0 +1,6 @@
+.arribaDerecha {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 40px; /* opcional, para que no esté pegado al borde */
+}

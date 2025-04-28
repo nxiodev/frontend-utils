@@ -1,10 +1,10 @@
 import { Component,Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {DivComponent} from '../../atoms/div/div.component';
+import { } from '../../atoms/div/div.component';
 
 @Component({
   selector: 'app-div-text',
-  imports: [CommonModule, DivComponent],
+  imports: [CommonModule,  ],
   templateUrl: './div-text.component.html',
   styleUrl: './div-text.component.css',
   standalone: true

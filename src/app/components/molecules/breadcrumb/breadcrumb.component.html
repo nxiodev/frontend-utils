@@ -1,7 +1,7 @@
 <app-toolbar>
-  <app-div *ngFor="let bread of breads">
+  <div *ngFor="let bread of breads">
     <app-a [routerLink]="bread.url" class="subrayado">{{bread.name}}</app-a>
     <app-a class="separator"> > </app-a>
-  </app-div>
+  </div>
 </app-toolbar>
 

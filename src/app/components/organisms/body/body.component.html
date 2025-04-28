@@ -1,7 +1,5 @@
-<app-div [ngClass]="{'body-inicial': isSidenavOpen === 0, 'body-cerrar': isSidenavOpen === 1, 'body-abrir': isSidenavOpen === 2}"><!--TODO: add a class for the margin-->
-  <app-div-text [topText] = "topText">
-
-  </app-div-text>
+<div >
+  <h2>{{ topText }}</h2>
 
   <app-texts [image]="image" [title]="title" [description]="description" [titleTexts]="titleTexts">
 
@@ -17,4 +15,4 @@
     [description]="subtitle2"
     [titleTexts]="titleTexts2">
   </app-texts>
-</app-div>
+</div>

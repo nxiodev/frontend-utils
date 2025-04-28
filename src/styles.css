@@ -11,46 +11,28 @@ body {
   margin: 0 5px;
 } /* Usado en los breadcrumbs */
 
-/* Body component classes - moved here to be globally accessible */
-.body-inicial{
-  border-top: 3px solid #e2e8f0;
-  padding-top: 10px;
-  padding-left: 15%;
-  background-color: #f1f5f9;
+
+
+.botonPequeño{
+  width: 8%;
 }
 
-.body-abrir{
-  border-top: 3px solid #e2e8f0;
-  padding-top: 10px;
-  padding-left: 17%;
-  transition: padding-left 0.18s ease-in-out;
-  background-color: #f1f5f9;
+.IconoMediano{
+  display: flex;
+  gap: 7vh;
 }
 
-.body-cerrar{
-  border-top: 3px solid #e2e8f0;
-  padding-top: 10px;
-  padding-left: 2%;
-  transition: padding-left 0.185s ease-in-out;
-  background-color: #f1f5f9;
+.IconoMediano app-universal-icon{
+  font-size: 150%;
+  color: #000;
 }
 
-.dimensiones-inicial {
-  margin-left: 15%;
+.ColorFondoMorado{
+  background-color: #fcf4fc;
+  margin-left: -16px;
+  margin-right: -16px;
+  margin-top: -20px;
+  padding-left: 16px;
+  padding-top: 30px;
+  padding-bottom: 5px;
 }
-
-.dimensiones-abrir {
-  margin-left: 15%;
-  transition: margin-left 0.18s ease-in-out;
-
-}
-
-.dimensiones-cerrar {
-  margin-left: 0%;
-  transition: margin-left 0.185s ease-in-out;
-}
-
-
-
-
-

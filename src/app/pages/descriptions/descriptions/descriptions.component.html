@@ -1,5 +1,5 @@
-<app-div *ngFor="let vista of vistas">
-      <app-div *ngIf="type?.toLowerCase() === vista.title.toLowerCase()">
+<div *ngFor="let vista of vistas">
+      <div *ngIf="type?.toLowerCase() === vista.title.toLowerCase()">
         <app-template
           [dataSource]="vista.dataSource"
           [image]="vista.image"
@@ -16,7 +16,7 @@
           [breads]="vista.breads"
           [title]="vista.title">
         </app-template>
-      </app-div>
-    </app-div>
+      </div>
+    </div>
 
 

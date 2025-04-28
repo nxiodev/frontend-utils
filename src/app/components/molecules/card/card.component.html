@@ -1,8 +1,9 @@
-<app-div class="englobar">
+<div class="englobar">
 <mat-card class="englobar">
-  <img *ngIf="image" [src]="image" alt="Card image">
+  <div *ngIf="image" class="card-image-container">
+    <img [src]="image" alt="Card image">
+  </div>
   <mat-card-title *ngIf="title">{{ title }}</mat-card-title>
   <mat-card-content *ngIf="description">{{ description }}</mat-card-content>
 </mat-card>
-</app-div>
-
+</div>

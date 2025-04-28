@@ -1,6 +1,9 @@
-<app-sidenav [links]="links"></app-sidenav>
-<app-header [isSidenavOpen]="isSidenavOpen ? 2 : 1" [breads]="breads" [title]="title"></app-header>
+<app-sidenav [links]="links">
+  <app-header  [breads]="breads" [title]="title"></app-header>
 
-<app-body [isSidenavOpen]="isSidenavOpen ? 2 : 1" [dataSource]="dataSource" [title]="titlePrimario" [image]="image" [titleTexts]="titleTexts"
-          [description]="description" [topText]="topText" [imageUrl2]="imageUrl2" [titleTable1]="titleTable1"
-          [subtitle2]="subtitle2" [title2]="title2" [titleTexts2]="titleTexts2"></app-body>
+  <app-body [isSidenavOpen]="isSidenavOpen ? 2 : 1" [dataSource]="dataSource" [title]="titlePrimario" [image]="image" [titleTexts]="titleTexts"
+            [description]="description" [topText]="topText" [imageUrl2]="imageUrl2" [titleTable1]="titleTable1"
+            [subtitle2]="subtitle2" [title2]="title2" [titleTexts2]="titleTexts2"></app-body>
+
+
+</app-sidenav>

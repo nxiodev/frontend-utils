@@ -1,0 +1,9 @@
+.mostrarCards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+}

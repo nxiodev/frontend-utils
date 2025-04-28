@@ -22,14 +22,14 @@ import {NgIf} from '@angular/common';
       private sidenavSubscription: Subscription | null = null;
 
       @Input() links = [
-        { url: '/descriptions?button', name: 'Button' },
-        { url: '/descriptions?badge', name: 'Badge' },
-        { url: '/descriptions?input', name: 'Input' },
-        { url: '/descriptions?icon', name: 'Icon' },
-        { url: '/descriptions?card', name: 'Card' },
-        { url: '/descriptions?progressspinner', name: 'Progress Spinner' },
-        { url: '/descriptions?checkbox', name: 'CheckBox' },
-        { url: '/descriptions?grid', name: 'Grid' },
+        { url: '/descriptions?button', name: 'Button', icon: '' },
+        { url: '/descriptions?badge', name: 'Badge', icon: '' },
+        { url: '/descriptions?input', name: 'Input', icon: '' },
+        { url: '/descriptions?icon', name: 'Icon', icon: '' },
+        { url: '/descriptions?card', name: 'Card', icon: '' },
+        { url: '/descriptions?progressspinner', name: 'Progress Spinner', icon: '' },
+        { url: '/descriptions?checkbox', name: 'CheckBox', icon: '' },
+        { url: '/descriptions?grid', name: 'Grid', icon: '' },
       ];
 
       @Input() breads: { url: string, name: string }[] = [

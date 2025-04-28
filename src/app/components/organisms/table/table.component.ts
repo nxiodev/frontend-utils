@@ -1,7 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { MatTableModule } from '@angular/material/table';
 import { AtomsStats } from '../../../models/atoms-stats.model';
-import {DivComponent} from '../../atoms/div/div.component';
 
 
 @Component({
@@ -9,7 +8,7 @@ import {DivComponent} from '../../atoms/div/div.component';
   templateUrl: './table.component.html',
   styleUrls: ['./table.component.css'],
   standalone: true,
-  imports: [MatTableModule, DivComponent],
+  imports: [MatTableModule],
 })
 export class TableComponent {
   @Input() dataSource: AtomsStats[] = [];

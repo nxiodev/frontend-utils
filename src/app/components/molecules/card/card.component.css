@@ -7,7 +7,7 @@ mat-card {
   padding: 16px;
   box-sizing: border-box;
   width: 360px;
-  height: 340px;
+  height: 450px;
   vertical-align: center
 }
 @media (max-width: 768px) {
@@ -18,3 +18,16 @@ mat-card {
 
 }
 
+.card-image-container {
+  height: 80%; /* You can adjust this height as needed */
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.card-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This crops the image to fill the container */
+  object-position: center; /* Centers the image */
+}

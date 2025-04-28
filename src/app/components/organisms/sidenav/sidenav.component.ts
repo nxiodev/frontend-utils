@@ -1,29 +1,28 @@
 import { ViewChild, OnInit, HostListener } from '@angular/core';
 import { Component, Input } from '@angular/core';
-import { MatSidenav, MatSidenavContainer, MatSidenavModule } from '@angular/material/sidenav';
+import { MatSidenav, MatSidenavModule } from '@angular/material/sidenav';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatButtonModule } from '@angular/material/button';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { MatListItem } from '@angular/material/list';
-import { MatIcon } from '@angular/material/icon';
 import { ButtonComponent } from '../../atoms/button/button.component';
 import { SidenavService} from '../../../services/sidenav.service';
 import {IconComponent} from '../../atoms/icon/icon.component';
-import {DivComponent} from '../../atoms/div/div.component'; // Importar el servicio
+import {UniversalIconComponent} from '../../atoms/universal-icon/universal-icon.component';
 
 @Component({
   selector: 'app-sidenav',
   standalone: true,
   imports: [
     MatSidenav, MatNativeDateModule, MatButtonModule,
-    CommonModule, MatSidenavModule, RouterModule, MatListItem, ButtonComponent, IconComponent, DivComponent
+    CommonModule, MatSidenavModule, RouterModule, MatListItem, ButtonComponent, IconComponent, UniversalIconComponent,
   ],
   templateUrl: 'sidenav.component.html',
   styleUrl: 'sidenav.component.css'
 })
 export class SidenavComponent implements OnInit {
-  @Input() links: { url: string, name: string }[] = [];
+  @Input() links: { url: string, name: string, icon: string}[] = [];
   @ViewChild('sidenav') sidenav!: MatSidenav;
   isMobile = false;
   isSidenavOpen = false;  // Estado del sidenav

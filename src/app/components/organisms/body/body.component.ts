@@ -1,17 +1,14 @@
 import { Component, Input } from '@angular/core';
 import { AtomsStats } from '../../../models/atoms-stats.model';
 import { TextsComponent} from '../../molecules/texts/texts.component';
-import {DivTextComponent} from '../../molecules/div-text/div-text.component';
 import {TableComponent} from '../table/table.component';
-import {NgClass} from '@angular/common';
-import {DivComponent} from '../../atoms/div/div.component';
 
 @Component({
   selector: 'app-body',
   templateUrl: './body.component.html',
   styleUrls: ['./body.component.css'],
   standalone: true,
-  imports: [TextsComponent, DivTextComponent, TableComponent, NgClass, DivComponent]
+  imports: [TextsComponent, TableComponent,]
 })
 
 export class BodyComponent {

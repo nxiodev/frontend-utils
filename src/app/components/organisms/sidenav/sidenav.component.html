@@ -1,23 +1,48 @@
 <mat-sidenav-container class="sidenav-container">
   <!-- Sidenav controlado por el servicio -->
-  <mat-sidenav #sidenav [mode]="isMobile ? 'over' : 'side'" [(opened)]="isSidenavOpen" class="sidenav-scroll">
+  <mat-sidenav #sidenav [mode]="isMobile ? 'over' : 'side'" [(opened)]="isSidenavOpen" >
     <app-button (click)="toggleSidenav()" class="dentroLayout">
       <app-icon>menu</app-icon>
     </app-button>
-    <app-div *ngFor="let link of links" class="marginLink">
-      <a mat-list-item [routerLink]="link.url" routerLinkActive="active-link"
-         [routerLinkActiveOptions]="{exact: true}" (click)="onLinkClick()">
+    <div *ngFor="let link of links" class="marginLink">
+      <a
+        mat-list-item
+        *ngIf="link.icon"
+        class="quitarLinkIcono"
+        [routerLink]="link.url"
+        routerLinkActive="active-link"
+        [routerLinkActiveOptions]="{ exact: true }"
+        (click)="onLinkClick()"
+      >
+        <app-universal-icon *ngIf="link.icon" [class]="link.icon" class="centrado"></app-universal-icon>
+        <span>{{ link.name }}</span>
+      </a>
+
+      <a
+        mat-list-item
+        *ngIf="!link.icon && link.url"
+        class="quitarLinkNormal"
+        [routerLink]="link.url"
+        routerLinkActive="active-link"
+        [routerLinkActiveOptions]="{ exact: true }"
+        (click)="onLinkClick()"
+      >
         {{ link.name }}
       </a>
-    </app-div>
+    </div>
+
   </mat-sidenav>
   <mat-sidenav-content class="main-content">
     <!-- Botón para abrir/cerrar sidenav -->
-    <app-button (click)="toggleSidenav()" class="fueraLayout">
-      <app-icon>menu</app-icon>
-    </app-button>
-    <app-div class="content">
-      <router-outlet></router-outlet>
-    </app-div>
+    <div class="ColorFondoMorado">
+      <div class="botonPequeño">
+        <app-button (click)="toggleSidenav()" class="fueraLayout">
+          <app-icon>menu</app-icon>
+        </app-button>
+      </div>
+    </div>
+    <div class="content">
+      <ng-content></ng-content>
+    </div>
   </mat-sidenav-content>
 </mat-sidenav-container>

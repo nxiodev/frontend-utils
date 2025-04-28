@@ -1,11 +1,9 @@
 import { Component, Input } from '@angular/core';
 import { BreadcrumbComponent } from '../../molecules/breadcrumb/breadcrumb.component';
-import { NgClass } from '@angular/common';
-import {DivComponent} from '../../atoms/div/div.component';
 
 @Component({
   selector: 'app-header',
-  imports: [BreadcrumbComponent, NgClass, DivComponent],
+  imports: [BreadcrumbComponent,  ],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })

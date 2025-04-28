@@ -1,7 +1,6 @@
 import {ChangeDetectionStrategy, Component, Input} from '@angular/core';
 import {MatCardModule} from '@angular/material/card';
 import {NgIf} from '@angular/common';
-import {DivComponent} from '../../atoms/div/div.component';
 
 /**
  * @title Card with media size
@@ -10,7 +9,7 @@ import {DivComponent} from '../../atoms/div/div.component';
   selector: 'app-card',
   templateUrl: 'card.component.html',
   styleUrl: 'card.component.css',
-  imports: [MatCardModule, NgIf, DivComponent],
+  imports: [MatCardModule, NgIf,  ],
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
 })
