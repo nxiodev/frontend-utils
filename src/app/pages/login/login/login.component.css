@@ -3,7 +3,7 @@
   border-radius: 28px; /* Puedes ajustar el número */
   margin-left: 55%;
   margin-right: 5%;
-  margin-top: 15px;
+  margin-top: 50px;
   margin-bottom: 30px;
   padding-top: 20px;
   padding-bottom: 40px;
@@ -38,7 +38,8 @@
   margin: 3px;
   border-radius: 28px; /* Puedes ajustar el número */
   padding-top: 1px;
-  padding-bottom: 1px;
+  padding-bottom: 40px;
+  padding-right: 30px;
 }
 
 .BotonGrande{

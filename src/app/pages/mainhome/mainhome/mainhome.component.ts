@@ -29,24 +29,17 @@ export class MainhomeComponent {
   ];
   @Input() cards: { image: string, title: string, description: string, link: string }[] = [
     {
-      image: 'https://cdn-5f4f6e14c1ac180394b738c9.closte.com/wp-content/uploads/2018/03/01-1170x635.jpg',
-      title: 'Running',
-      description: 'Get our first course of running',
-      link: 'login.png'
+      image: 'https://previews.123rf.com/images/rastudio/rastudio1604/rastudio160401184/54573564-%C3%ADcono-de-dibujo-de-%C3%A1tomo-para-web-m%C3%B3vil-e-infograf%C3%ADa-mano-dibuja-el-icono-aislado-vector.jpg',
+      title: 'Atom Gallery',
+      description: 'Select and use one of our atoms',
+      link: '/'
     },
     {
-      image: 'https://i0.wp.com/blog.myswimpro.com/wp-content/uploads/2023/10/freestyle-stroke-breathing-technique-myswimpro.jpeg?resize=1024%2C683&ssl=1',
-      title: 'Swimming',
-      description: 'be part of our first course of swimming\n' +
-        'with a very capable coach',
-      link: '/some-page-2'
-    },
-    {
-      image: 'https://www.geezersboxing.co.uk/static/frontend/Gsl/Geezers/en_GB/images/elite-pro-sparring.jpg',
-      title: 'boxing',
-      description: 'Do yoy want something to leave your\n' +
-        'energy and focus? So we are your best choise',
-      link: '/some-page-2'
+      image: 'https://cdn-icons-png.flaticon.com/512/1307/1307714.png',
+      title: 'Users',
+      description: 'A list of our users\n' +
+        'where you can see their information',
+      link: '/crud'
     }
   ];
 }

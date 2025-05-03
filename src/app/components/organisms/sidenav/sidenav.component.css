@@ -12,7 +12,7 @@ colorSidenav{
 }
 
 .marginLink{
-  margin-top: 8%;
+  margin-top: 8vh;
 }
 
 mat-sidenav {
@@ -80,6 +80,7 @@ mat-sidenav a.active-link {
   justify-content: center;
   align-items: center;
   height: 100%;
+  width: 100%;
 }
 app-universal-icon{
   width: 100%;
@@ -91,7 +92,7 @@ app-universal-icon{
     width: 80%;
   }
   .marginLink{
-    margin-top: 5%;
+    margin-top: 6.5vh;
   }
   .main-content {
     margin-left: 0;
