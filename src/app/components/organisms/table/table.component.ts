@@ -1,6 +1,5 @@
-import { Component, Input } from '@angular/core';
+import {Component, Input, NO_ERRORS_SCHEMA} from '@angular/core';
 import { MatTableModule } from '@angular/material/table';
-import { AtomsStats } from '../../../models/atoms-stats.model';
 
 
 @Component({
@@ -9,12 +8,14 @@ import { AtomsStats } from '../../../models/atoms-stats.model';
   styleUrls: ['./table.component.css'],
   standalone: true,
   imports: [MatTableModule],
+  schemas: [NO_ERRORS_SCHEMA]
 })
 export class TableOrganism {
-  @Input() dataSource: AtomsStats[] = [];
+  @Input() dataSource: any[] = [];
   @Input() titleTable1!: string;
 
   get displayedColumns(): string[] {
+    console.log('this.dataSource', this.dataSource);
     return this.dataSource.some(element => element.default !== '')
       ? ['name', 'description', 'default' ]
       : ['name', 'description'];

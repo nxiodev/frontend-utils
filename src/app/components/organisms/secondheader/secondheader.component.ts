@@ -7,7 +7,8 @@ import {UniversalIconAtom} from '../../atoms/universal-icon/universal-icon.compo
     UniversalIconAtom
   ],
   templateUrl: './secondheader.component.html',
-  styleUrl: './secondheader.component.css'
+  styleUrl: './secondheader.component.css',
+  standalone: true,
 })
 export class SecondHeaderOrganism {
   @Input() TitlePage: string = 'NXIODEV';
