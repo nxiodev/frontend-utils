@@ -11,6 +11,6 @@ import {MatInputModule} from '@angular/material/input';
   imports: [MatFormFieldModule, MatInputModule, MatIconModule],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class InputComponent {
+export class InputMolecule {
   @Input() InputText: string = 'Rellenar';
 }

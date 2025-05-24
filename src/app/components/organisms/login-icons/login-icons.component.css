@@ -1,0 +1,27 @@
+.separator {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+
+.separator::before,
+.separator::after {
+  content: "";
+  flex: 1;
+  border-bottom: 3px solid #ccc;
+  height: 0; /* Esto asegura que la línea se renderice */
+}
+
+.separator:not(:empty)::before {
+  margin-right: 0.75em;
+}
+
+.separator:not(:empty)::after {
+  margin-left: 0.75em;
+}

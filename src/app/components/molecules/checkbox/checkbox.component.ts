@@ -1,7 +1,6 @@
 import {ChangeDetectionStrategy, Component, Input} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {MatCheckboxModule} from '@angular/material/checkbox';
-import { } from '../../atoms/div/div.component';
 
 @Component({
   selector: 'app-checkbox',
@@ -10,6 +9,6 @@ import { } from '../../atoms/div/div.component';
   imports: [MatCheckboxModule, FormsModule,  ],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class CheckboxComponent {
+export class CheckboxMolecule {
   @Input() CheckText!: string;
 }

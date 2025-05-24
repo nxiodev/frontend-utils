@@ -6,6 +6,6 @@ import {Component, Input} from '@angular/core';
   templateUrl: './universal-icon.component.html',
   styleUrl: './universal-icon.component.css'
 })
-export class UniversalIconComponent {
+export class UniversalIconAtom {
 @Input() IconName: string = '';
 }

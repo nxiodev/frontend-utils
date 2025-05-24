@@ -1,0 +1,11 @@
+.BotonGrande{
+  width: 80%;
+  max-width: 300px;
+  padding: 15px 0;
+  font-size: 1.1rem;
+}
+
+.recovery{
+  padding-left:20%;
+  padding-bottom: 10%;
+}

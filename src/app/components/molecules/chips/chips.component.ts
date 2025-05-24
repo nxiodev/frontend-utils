@@ -8,7 +8,7 @@ import { MatChip } from '@angular/material/chips';
   styleUrls: ['./chips.component.css'],
   imports: [MatChip]
 })
-export class ChipsComponent {
+export class ChipsMolecule {
   @Input() imageSrc!: string;
   @Input() imageAlt!: string;
   @Input() chipLabel!: string;

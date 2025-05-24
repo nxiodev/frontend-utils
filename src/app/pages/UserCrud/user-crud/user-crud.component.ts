@@ -1,25 +1,23 @@
 import {Component, Input} from '@angular/core';
-import {CardComponent} from "../../../components/molecules/card/card.component";
+import {CardMolecule} from "../../../components/molecules/card/card.component";
 import {NgForOf} from "@angular/common";
-import {SecondheaderComponent} from "../../../components/organisms/secondheader/secondheader.component";
-import {SidenavComponent} from "../../../components/organisms/sidenav/sidenav.component";
-import {TableComponent} from '../../../components/organisms/table/table.component';
+import {SecondHeaderOrganism} from "../../../components/organisms/secondheader/secondheader.component";
+import {SidenavOrganism} from "../../../components/organisms/sidenav/sidenav.component";
+import {TableOrganism} from '../../../components/organisms/table/table.component';
 import {AtomsStats} from '../../../models/atoms-stats.model';
 
 @Component({
   selector: 'app-user-crud',
   imports: [
-    CardComponent,
-    NgForOf,
-    SecondheaderComponent,
-    SidenavComponent,
-    TableComponent
+    SecondHeaderOrganism,
+    SidenavOrganism,
+    TableOrganism
   ],
   templateUrl: './user-crud.component.html',
   styleUrl: './user-crud.component.css'
 })
 export class UserCrudComponent {
-  @Input() links = [
+  links = [
     { url: '/descriptions?button', name: '', icon: 'fa-solid fa-bars' },
     { url: '/descriptions?badge', name: '', icon: 'fa-solid fa-plus' },
     { url: '/descriptions?input', name: 'profile', icon: 'fa-solid fa-user' },
@@ -27,7 +25,7 @@ export class UserCrudComponent {
     { url: '/descriptions?card', name: 'explore', icon: 'fa-solid fa-compass' },
     { url: '/descriptions?progressspinner', name: 'contac us', icon: 'fa-solid fa-inbox' },
   ];
-  @Input() dataSource: AtomsStats[] = [
+  dataSource: AtomsStats[] = [
     {
       name: 'Donovan',
       description: 'donovanivanq@gmail.com',

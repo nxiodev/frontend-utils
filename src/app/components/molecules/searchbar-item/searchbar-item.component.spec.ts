@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SearchBarComponent } from './searchbar-item.component';
+import { MenuItemMolecule } from './searchbar-item.component';
 
 describe('SearchbarItemComponent', () => {
-  let component: SearchBarComponent;
-  let fixture: ComponentFixture<SearchBarComponent>;
+  let component: MenuItemMolecule;
+  let fixture: ComponentFixture<MenuItemMolecule>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SearchBarComponent]
+      imports: [MenuItemMolecule]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(SearchBarComponent);
+    fixture = TestBed.createComponent(MenuItemMolecule);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

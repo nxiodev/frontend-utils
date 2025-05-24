@@ -1,0 +1,19 @@
+.icon-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  gap: 100%; /* espacio entre iconos */
+  margin-top: -5px;
+}
+
+app-universal-icon {
+  font-size: 2rem; /* agranda los íconos */
+  color: #333;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+app-universal-icon:hover {
+  transform: scale(1.2);
+  color: #5f4b8b;
+}

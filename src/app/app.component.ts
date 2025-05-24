@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import {SidenavComponent} from './components/organisms/sidenav/sidenav.component';
+import {SidenavOrganism} from './components/organisms/sidenav/sidenav.component';
 
 
 

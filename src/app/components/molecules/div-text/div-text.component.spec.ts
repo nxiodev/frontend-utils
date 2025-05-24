@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DivTextComponent } from './div-text.component';
+import { DivTextMolecule } from './div-text.component';
 
-describe('DivTextComponent', () => {
-  let component: DivTextComponent;
-  let fixture: ComponentFixture<DivTextComponent>;
+describe('DivTextMolecule', () => {
+  let component: DivTextMolecule;
+  let fixture: ComponentFixture<DivTextMolecule>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [DivTextComponent]
+      declarations: [DivTextMolecule]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(DivTextComponent);
+    fixture = TestBed.createComponent(DivTextMolecule);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

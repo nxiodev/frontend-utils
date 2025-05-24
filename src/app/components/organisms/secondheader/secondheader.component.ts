@@ -1,14 +1,14 @@
 import {Component, Input} from '@angular/core';
-import {UniversalIconComponent} from '../../atoms/universal-icon/universal-icon.component';
+import {UniversalIconAtom} from '../../atoms/universal-icon/universal-icon.component';
 
 @Component({
   selector: 'app-secondheader',
   imports: [
-    UniversalIconComponent
+    UniversalIconAtom
   ],
   templateUrl: './secondheader.component.html',
   styleUrl: './secondheader.component.css'
 })
-export class SecondheaderComponent {
+export class SecondHeaderOrganism {
   @Input() TitlePage: string = 'NXIODEV';
 }

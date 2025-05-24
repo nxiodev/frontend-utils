@@ -10,6 +10,6 @@ import {MatIconModule} from '@angular/material/icon';
   imports: [MatIconModule],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class IconComponent {
+export class IconAtom {
   @Input() icon: string = 'home';
 }

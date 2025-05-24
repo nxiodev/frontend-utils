@@ -10,7 +10,7 @@ import { AtomsStats } from '../../../models/atoms-stats.model';
   standalone: true,
   imports: [MatTableModule],
 })
-export class TableComponent {
+export class TableOrganism {
   @Input() dataSource: AtomsStats[] = [];
   @Input() titleTable1!: string;
 

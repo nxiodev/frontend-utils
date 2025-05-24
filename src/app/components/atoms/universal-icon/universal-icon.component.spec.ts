@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { UniversalIconComponent } from './universal-icon.component';
+import { UniversalIconAtom } from './universal-icon.component';
 
-describe('UniversalIconComponent', () => {
-  let component: UniversalIconComponent;
-  let fixture: ComponentFixture<UniversalIconComponent>;
+describe('UniversalIconAtom', () => {
+  let component: UniversalIconAtom;
+  let fixture: ComponentFixture<UniversalIconAtom>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [UniversalIconComponent]
+      imports: [UniversalIconAtom]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(UniversalIconComponent);
+    fixture = TestBed.createComponent(UniversalIconAtom);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

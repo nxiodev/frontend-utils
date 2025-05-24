@@ -12,7 +12,7 @@ import {MatBadgeModule} from '@angular/material/badge';
   styleUrl: 'badge.component.css',
   imports: [MatBadgeModule, MatButtonModule, MatIconModule],
 })
-export class BadgeComponent {
+export class BadgeAtom {
   hidden = false;
 
   toggleBadgeVisibility() {

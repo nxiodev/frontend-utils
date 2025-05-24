@@ -1,17 +1,17 @@
 import { Component, Input } from '@angular/core';
 import { AtomsStats } from '../../../models/atoms-stats.model';
-import { TextsComponent} from '../../molecules/texts/texts.component';
-import {TableComponent} from '../table/table.component';
+import { TextsMolecule} from '../../molecules/texts/texts.component';
+import {TableOrganism} from '../table/table.component';
 
 @Component({
   selector: 'app-body',
   templateUrl: './body.component.html',
   styleUrls: ['./body.component.css'],
   standalone: true,
-  imports: [TextsComponent, TableComponent,]
+  imports: [TextsMolecule, TableOrganism,]
 })
 
-export class BodyComponent {
+export class BodyOrganism {
   @Input() dataSource: AtomsStats[] = []; // Recibe los datos de su padre
   @Input() image:string = '';
   @Input() title:string = '';

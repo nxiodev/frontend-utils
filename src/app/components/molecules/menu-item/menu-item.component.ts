@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import {MatIcon} from '@angular/material/icon';
-import {ButtonComponent} from '../../atoms/button/button.component';
+import {ButtonAtom} from '../../atoms/button/button.component';
 
 @Component({
   selector: 'app-menu-item',
@@ -8,11 +8,11 @@ import {ButtonComponent} from '../../atoms/button/button.component';
   standalone: true,
   imports: [
     MatIcon,
-    ButtonComponent
+    ButtonAtom
   ],
   styleUrls: ['./menu-item.component.css']
 })
-export class MenuItemComponent {
+export class MenuItemMolecule {
   @Input() label: string = '';
   @Input() icon: string = '';
 }

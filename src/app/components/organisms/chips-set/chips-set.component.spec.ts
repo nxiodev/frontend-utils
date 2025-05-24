@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ChipsSetComponent } from './chips-set.component';
+import { ChipsSetOrganism } from './chips-set.component';
 
-describe('ChipsSetComponent', () => {
-  let component: ChipsSetComponent;
-  let fixture: ComponentFixture<ChipsSetComponent>;
+describe('ChipsSetOrganism', () => {
+  let component: ChipsSetOrganism;
+  let fixture: ComponentFixture<ChipsSetOrganism>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ChipsSetComponent]
+      imports: [ChipsSetOrganism]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ChipsSetComponent);
+    fixture = TestBed.createComponent(ChipsSetOrganism);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

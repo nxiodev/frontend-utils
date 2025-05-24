@@ -1,9 +1,9 @@
 import { Component, Input, OnInit, OnDestroy } from '@angular/core';
     import { RouterModule } from '@angular/router';
-    import { HeaderComponent } from '../../organisms/header/header.component';
-    import { BodyComponent } from '../../organisms/body/body.component';
+    import { HeaderOrganism } from '../../organisms/header/header.component';
+    import { BodyOrganism } from '../../organisms/body/body.component';
     import { AtomsStats } from '../../../models/atoms-stats.model';
-    import { SidenavComponent } from '../../organisms/sidenav/sidenav.component';
+    import { SidenavOrganism } from '../../organisms/sidenav/sidenav.component';
     import { SidenavService } from '../../../services/sidenav.service';
     import { Subscription } from 'rxjs';
 import {NgIf} from '@angular/common';
@@ -12,7 +12,7 @@ import {NgIf} from '@angular/common';
       selector: 'app-template',
       standalone: true,
       imports: [
-        RouterModule, HeaderComponent, BodyComponent, SidenavComponent
+        RouterModule, HeaderOrganism, BodyOrganism, SidenavOrganism
       ],
       templateUrl: './template.component.html',
       styleUrl: './template.component.css'

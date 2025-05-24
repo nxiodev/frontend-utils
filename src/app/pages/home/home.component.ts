@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {HomeTemplateComponent} from '../../components/templates/home-template/home-template.component';
+import {HomeTemplate} from '../../components/templates/home-template/home-template.component';
 
 interface ngOnInit {
 }
@@ -9,7 +9,7 @@ interface ngOnInit {
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
   standalone: true,
-  imports: [HomeTemplateComponent]
+  imports: [HomeTemplate]
 })
 export class HomeComponent  {
   cards = [

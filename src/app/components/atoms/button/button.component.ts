@@ -9,6 +9,6 @@ import { MatButtonModule } from '@angular/material/button'; // Importa MatIconMo
   standalone: true,
   styleUrl: './button.component.css'
 })
-export class ButtonComponent {
+export class ButtonAtom {
 
 }

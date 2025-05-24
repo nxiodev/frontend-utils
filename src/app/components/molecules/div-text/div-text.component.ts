@@ -1,6 +1,5 @@
 import { Component,Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { } from '../../atoms/div/div.component';
 
 @Component({
   selector: 'app-div-text',
@@ -9,6 +8,6 @@ import { } from '../../atoms/div/div.component';
   styleUrl: './div-text.component.css',
   standalone: true
 })
-export class DivTextComponent {
+export class DivTextMolecule {
   @Input() topText: string = '';
 }

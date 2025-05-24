@@ -12,4 +12,4 @@ import {MatToolbarModule} from '@angular/material/toolbar';
   styleUrl: 'toolbar.component.css',
   imports: [MatToolbarModule, MatButtonModule, MatIconModule],
 })
-export class ToolbarComponent {}
+export class ToolbarAtom {}

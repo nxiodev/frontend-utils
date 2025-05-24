@@ -1,15 +1,15 @@
 import { Component, Input } from '@angular/core';
-import {MenuItemComponent} from '../../molecules/menu-item/menu-item.component';
+import {MenuItemMolecule} from '../../molecules/menu-item/menu-item.component';
 import {MatToolbar} from '@angular/material/toolbar';
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
-  imports: [MenuItemComponent, MatToolbar],
+  imports: [MenuItemMolecule, MatToolbar],
   standalone: true,
   styleUrls: ['./navbar.component.css']
 })
-export class NavbarComponent {
+export class NavbarOrganism {
   @Input() label: string = '';
   @Input() icon: string = '';
 }

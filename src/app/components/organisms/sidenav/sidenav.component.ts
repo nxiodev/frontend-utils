@@ -6,22 +6,22 @@ import { MatButtonModule } from '@angular/material/button';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { MatListItem } from '@angular/material/list';
-import { ButtonComponent } from '../../atoms/button/button.component';
+import { ButtonAtom } from '../../atoms/button/button.component';
 import { SidenavService} from '../../../services/sidenav.service';
-import {IconComponent} from '../../atoms/icon/icon.component';
-import {UniversalIconComponent} from '../../atoms/universal-icon/universal-icon.component';
+import {IconAtom} from '../../atoms/icon/icon.component';
+import {UniversalIconAtom} from '../../atoms/universal-icon/universal-icon.component';
 
 @Component({
   selector: 'app-sidenav',
   standalone: true,
   imports: [
     MatSidenav, MatNativeDateModule, MatButtonModule,
-    CommonModule, MatSidenavModule, RouterModule, MatListItem, ButtonComponent, IconComponent, UniversalIconComponent,
+    CommonModule, MatSidenavModule, RouterModule, MatListItem, ButtonAtom, IconAtom, UniversalIconAtom,
   ],
   templateUrl: 'sidenav.component.html',
   styleUrl: 'sidenav.component.css'
 })
-export class SidenavComponent implements OnInit {
+export class SidenavOrganism implements OnInit {
   @Input() links: { url: string, name: string, icon: string}[] = [];
   @ViewChild('sidenav') sidenav!: MatSidenav;
   isMobile = false;

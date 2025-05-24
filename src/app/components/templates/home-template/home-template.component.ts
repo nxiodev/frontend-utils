@@ -1,15 +1,15 @@
 import { Component, Input } from '@angular/core';
-    import { CardGridComponent } from '../../organisms/card-grid/card-grid.component';
-    import { NavbarComponent } from '../../organisms/navbar/navbar.component';
+    import { CardGridOrganism } from '../../organisms/card-grid/card-grid.component';
+    import { NavbarOrganism } from '../../organisms/navbar/navbar.component';
 
     @Component({
       selector: 'app-home-template',
       templateUrl: './home-template.component.html',
       styleUrls: ['./home-template.component.css'],
       standalone: true,
-      imports: [CardGridComponent, NavbarComponent]
+      imports: [CardGridOrganism, NavbarOrganism]
     })
-    export class HomeTemplateComponent {
+    export class HomeTemplate {
       @Input() cards = [
         { image: 'http://imagen.jpg', title: 'Card 1', description: 'Description 1',link: '/descriptions/button' },
         { image: 'path/to/image2.jpg', title: 'Card 2', description: 'Description 2', link: '/descriptions/card' },

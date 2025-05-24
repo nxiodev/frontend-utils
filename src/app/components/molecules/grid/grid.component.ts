@@ -7,7 +7,7 @@ import { CommonModule } from '@angular/common';
   templateUrl: 'grid.component.html',
   imports: [MatGridListModule, CommonModule]
 })
-export class GridComponent {
+export class GridMolecule {
   @Input() grids: { template: any }[] = [];
   @Input() cols: number = 2;
   @Input() rowHeight: string = '100px';

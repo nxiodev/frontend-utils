@@ -21,7 +21,12 @@ body {
   display: flex;
   gap: 7vh;
 }
-
+.BotonGrande{
+  width: 80%;
+  max-width: 300px;
+  padding: 15px 0;
+  font-size: 1.1rem;
+}
 .IconoMediano app-universal-icon{
   font-size: 150%;
   color: #000;

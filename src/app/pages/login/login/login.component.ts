@@ -1,20 +1,16 @@
 import {Component, Input} from '@angular/core';
-import {InputComponent} from '../../../components/molecules/input/input.component';
-import {ButtonComponent} from '../../../components/atoms/button/button.component';
-import {UniversalIconComponent} from '../../../components/atoms/universal-icon/universal-icon.component';
-import {NgStyle} from '@angular/common';
+import {LoginTemplate} from '../../../components/templates/login-template/login-template.component';
 
 @Component({
   selector: 'app-login',
   imports: [
-    InputComponent,
-    ButtonComponent,
-    UniversalIconComponent,
-    NgStyle
+    LoginTemplate
   ],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
-  @Input() fondoLogin: string = "assets/images/login.png";
+  fondoLogin: string = "assets/images/login.png";
+  LoginTitle: string = 'Hello Again!';
+  LoginSubtitle: string = 'You have have been missed';
 }

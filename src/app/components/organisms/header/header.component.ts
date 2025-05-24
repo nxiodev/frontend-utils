@@ -1,13 +1,13 @@
 import { Component, Input } from '@angular/core';
-import { BreadcrumbComponent } from '../../molecules/breadcrumb/breadcrumb.component';
+import { BreadcrumbMolecule } from '../../molecules/breadcrumb/breadcrumb.component';
 
 @Component({
   selector: 'app-header',
-  imports: [BreadcrumbComponent,  ],
+  imports: [BreadcrumbMolecule,  ],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent {
+export class HeaderOrganism {
   @Input() title: string = '';
   @Input() breads: { url: string, name: string }[] = [];
   @Input() isSidenavOpen: number = 0;

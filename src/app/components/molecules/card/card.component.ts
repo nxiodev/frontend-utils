@@ -13,7 +13,7 @@ import {NgIf} from '@angular/common';
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
 })
-export class CardComponent {
+export class CardMolecule {
   @Input() image: string = '';
   @Input() title: string = '';
   @Input() description: string = '';

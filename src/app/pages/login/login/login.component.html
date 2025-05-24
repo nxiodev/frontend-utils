@@ -1,16 +1,4 @@
-<div class="fondo" [ngStyle]="{'background-image': 'url(' + fondoLogin + ')'}">
-    <div class='login-container'>
-      <h1>Hello Again!</h1>
-      <p>Welcome back, you've been missed!</p>
-      <app-input InputText="User"></app-input>
-      <app-input InputText="Password"></app-input>
-      <div class="recovery">Recovery password</div>
-      <app-button class="BotonGrande">Sign in</app-button>
-      <div class='separator'> O continua con</div>
-      <div class="icon-container">
-        <app-universal-icon [class]="'fab fa-google'"></app-universal-icon>
-        <app-universal-icon [class]="'fab fa-facebook'"></app-universal-icon>
-        <app-universal-icon [class]="'fab fa-twitter'"></app-universal-icon>
-      </div>
-    </div>
-  </div>
+<app-login-template [fondoLogin]="fondoLogin"
+                    [LoginTitle]="LoginTitle"
+                    [LoginSubtitle]="LoginSubtitle">
+</app-login-template>
