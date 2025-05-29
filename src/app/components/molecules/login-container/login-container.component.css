@@ -3,15 +3,15 @@
   border-radius: 28px; /* Puedes ajustar el número */
   margin-left: 55%;
   margin-right: 5%;
-  margin-top: 50px;
+  margin-top: 2vh;
   margin-bottom: 30px;
   padding-top: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 2.5vh;
   padding-left: 2%;
   padding-right: 2%;
   display: grid;
   place-items: center;
-  height: 600px;
+  height: 90vh;
   background-color: rgba(255, 255, 255, 0.9); /* 50% de opacidad */
 }
 .login-container p {
@@ -28,6 +28,7 @@
 }
 
 
+
 .login-container h1 {
   font-size: 2rem;
   margin-bottom: 10px;
@@ -36,16 +37,17 @@
 
 @media (max-width: 1087px) {
   .login-container {
-    margin-left: 19%;
-    margin-right: 19%;
+    width: 639px;
     margin-top: 1px;
     padding-top: 0px;
     padding-bottom: 40px;
+    margin: 0 auto;
   }
+
 }
 @media (max-width: 713px) {
   .login-container {
-    margin-left: 5%;
-    margin-right: 5%;
+    width: 90vw;
+    margin: 0 auto;
   }
 }

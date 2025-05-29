@@ -1,6 +1,10 @@
-<p>
-  <mat-form-field appearance="fill">
-    <mat-label>{{InputText}}</mat-label>
-    <input matInput class="entrada">
-  </mat-form-field>
-</p>
+<!-- atomic-input.component.html -->
+<div class="atomic-input">
+  <input
+    [type]="type"
+    [placeholder]="InputText"
+    [value]="value"
+    (input)="handleInput($event)"
+    [disabled]="isDisabled"
+  />
+</div>

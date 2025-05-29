@@ -1,16 +1,48 @@
-import {ChangeDetectionStrategy, Component, Input} from '@angular/core';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatIconModule} from '@angular/material/icon';
-import {MatInputModule} from '@angular/material/input';
+import { Component, Input, forwardRef } from '@angular/core';
+import { NG_VALUE_ACCESSOR, ControlValueAccessor } from '@angular/forms';
 
-/** @title Form field appearance variants */
 @Component({
   selector: 'app-input',
-  templateUrl: 'input.component.html',
-  styleUrl: 'input.component.css',
-  imports: [MatFormFieldModule, MatInputModule, MatIconModule],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  templateUrl: './input.component.html',
+  styleUrls: ['./input.component.css'],
+  providers: [
+    {
+      provide: NG_VALUE_ACCESSOR,
+      useExisting: forwardRef(() => InputAtom),
+      multi: true
+    }
+  ]
 })
-export class InputMolecule {
-  @Input() InputText: string = 'Rellenar';
+export class InputAtom implements ControlValueAccessor {
+  @Input() InputText: string = '';
+  @Input() type: string = 'text';
+
+  value: string = '';
+  isDisabled: boolean = false;
+
+  onChange = (_: any) => {};
+  onTouched = () => {};
+
+  writeValue(value: any): void {
+    this.value = value;
+  }
+
+  registerOnChange(fn: any): void {
+    this.onChange = fn;
+  }
+
+  registerOnTouched(fn: any): void {
+    this.onTouched = fn;
+  }
+
+  setDisabledState?(isDisabled: boolean): void {
+    this.isDisabled = isDisabled;
+  }
+
+  handleInput(event: any): void {
+    const value = event.target.value;
+    this.value = value;
+    this.onChange(value);
+    this.onTouched();
+  }
 }

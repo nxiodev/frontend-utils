@@ -1,5 +1,5 @@
-<app-login-container [LoginTitle]="LoginTitle" [LoginSubtitle]="LoginSubtitle" >
-  <app-login-inputs></app-login-inputs>
-  <app-login-actions style="width: 50%"></app-login-actions>
+<app-login-container [LoginTitle]="LoginTitle" [LoginSubtitle]="LoginSubtitle">
+  <app-login-inputs (credentialsEntered)="onCredentialsEntered($event)"></app-login-inputs>
+  <app-login-actions (signInClicked)="onSignInClicked()" style="width: 50%"></app-login-actions>
   <app-login-icons></app-login-icons>
 </app-login-container>

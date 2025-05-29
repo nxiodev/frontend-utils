@@ -1,7 +1,10 @@
 .fondo{
   margin: 3px;
-  border-radius: 28px; /* Puedes ajustar el número */
+  height: 99vh;
+  border-radius: 2%;
   padding-top: 1px;
-  padding-bottom: 40px;
-  padding-right: 100px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }

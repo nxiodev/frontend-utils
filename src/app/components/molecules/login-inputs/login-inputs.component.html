@@ -1,2 +1,12 @@
-<app-input InputText="User"></app-input>
-<app-input InputText="Password"></app-input>
+<app-input
+  [(ngModel)]="username"
+  InputText="User"
+  (ngModelChange)="onInputChange()"
+></app-input>
+
+<app-input
+  [(ngModel)]="password"
+  InputText="Password"
+  type="password"
+  (ngModelChange)="onInputChange()"
+></app-input>
