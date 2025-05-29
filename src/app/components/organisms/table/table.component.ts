@@ -1,13 +1,13 @@
 import { Component, Input, OnInit, OnChanges, SimpleChanges, ChangeDetectorRef } from '@angular/core';
 import { MatTableModule } from '@angular/material/table';
-import { TitleCasePipe, NgIf } from '@angular/common';
+import { TitleCasePipe, NgIf, CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-table',
   templateUrl: './table.component.html',
   styleUrls: ['./table.component.css'],
   standalone: true,
-  imports: [MatTableModule, TitleCasePipe, NgIf]
+  imports: [MatTableModule, TitleCasePipe, NgIf, CommonModule]
 })
 export class TableOrganism implements OnInit, OnChanges {
   @Input() dataSource: any[] = [];
