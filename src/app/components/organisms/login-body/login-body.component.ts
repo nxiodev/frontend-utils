@@ -1,10 +1,10 @@
 import { Component, Input } from '@angular/core';
 import { DataService } from '../../../services/data.service';
 import { Router } from '@angular/router';
-import {LoginContainerMolecule} from '../../molecules/login-container/login-container.component';
-import {LoginInputsMolecule} from '../../molecules/login-inputs/login-inputs.component';
-import {LoginActionsMolecule} from '../../molecules/login-actions/login-actions.component';
-import {LoginIconsOrganism} from '../login-icons/login-icons.component';
+import { LoginContainerMolecule } from '../../molecules/login-container/login-container.component';
+import { LoginInputsMolecule } from '../../molecules/login-inputs/login-inputs.component';
+import { LoginActionsMolecule } from '../../molecules/login-actions/login-actions.component';
+import { LoginIconsOrganism } from '../login-icons/login-icons.component';
 
 @Component({
   selector: 'app-login-body',
@@ -13,8 +13,7 @@ import {LoginIconsOrganism} from '../login-icons/login-icons.component';
     LoginContainerMolecule,
     LoginInputsMolecule,
     LoginActionsMolecule,
-    LoginIconsOrganism,
-    // tus moleculas y atomos
+    LoginIconsOrganism
   ],
   templateUrl: './login-body.component.html',
   styleUrls: ['./login-body.component.css']
@@ -30,14 +29,24 @@ export class LoginBodyComponent {
   onCredentialsEntered(credentials: { username: string; password: string }) {
     this.username = credentials.username;
     this.password = credentials.password;
+    console.log('Credenciales recibidas:', this.username);
   }
 
   async onSignInClicked() {
+    console.log('Iniciando sesión con:', this.username);
+
+    if (!this.username || !this.password) {
+      alert('Por favor introduce usuario y contraseña');
+      return;
+    }
+
     try {
       const token = await this.dataService.login(this.username, this.password);
-      console.log('Token guardado:', token);
-      this.router.navigate(['/dashboard']); // o la ruta a tu home
+
+      // Verificar que la navegación se ejecuta
+      await this.router.navigate(['/home']);
     } catch (err) {
+      console.error('Error durante el login:', err);
       alert('Credenciales incorrectas');
     }
   }

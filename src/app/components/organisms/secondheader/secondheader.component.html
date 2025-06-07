@@ -1,13 +1,33 @@
 <div class="ColorFondoMorado">
   <div>
-    <h1>{{TitlePage}}</h1>
+    <h1 class="clickeable" [routerLink]="'/'">{{ TitlePage }}</h1>
   </div>
+
   <div class="arribaDerecha">
-    <div class="IconoMediano">
+    <div class="IconoMediano flex gap-2 relative">
+      <!-- Otros iconos sin cambio -->
       <app-universal-icon class="fa-solid fa-link"></app-universal-icon>
       <app-universal-icon class="fa-solid fa-calendar-week"></app-universal-icon>
-      <app-universal-icon class="fa-solid fa-ellipsis-vertical" ></app-universal-icon>
+
+      <!-- Ícono con dropdown -->
+      <div class="relative">
+        <app-universal-icon
+          class="fa-solid fa-ellipsis-vertical cursor-pointer"
+          (click)="toggleDropdown()"
+        ></app-universal-icon>
+
+        <div
+          *ngIf="isDropdownOpen"
+          class="absolute right-0 mt-2 w-32 bg-white border border-gray-300 rounded shadow-lg z-50"
+        >
+          <button
+            class="block w-full text-left px-4 py-2 hover:bg-gray-100"
+            (click)="logout()"
+          >
+            Log out
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-

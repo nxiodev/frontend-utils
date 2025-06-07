@@ -7,9 +7,7 @@
   display: flex;
 
 }
-colorSidenav{
 
-}
 
 .marginLink{
   margin-top: 8vh;
@@ -47,7 +45,9 @@ mat-sidenav {
 
 .quitarLinkIcono {
   display: flex;
-  padding: 12px 100px;
+  /*padding: 12px 100px;*/
+  padding-top: 10%;
+  padding-bottom: 10%;
   justify-content: center;
   align-items: center;
   text-decoration: none;
@@ -59,7 +59,7 @@ mat-sidenav {
 
 .quitarLinkIconoTexto {
   display: block;
-  padding: 12px 16px;
+  /*padding: 12px 16px;*/
   text-decoration: none;
   color: #000;
   white-space: nowrap;
@@ -86,6 +86,14 @@ app-universal-icon{
   width: 100%;
 }
 
+.centradoSinMargen{
+  display: none;
+}
+.iconoMenu{
+  font-size: 20px;
+  cursor: pointer;
+}
+
 /* Responsive styles for mobile devices */
 @media (max-width: 768px) {
   mat-sidenav {
@@ -102,5 +110,22 @@ app-universal-icon{
     display: flex;
     margin-top: 5%;
     margin-left: 3%;
+  }
+  .centradoSinMargen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12.7%;
+    width: 100%;
+    cursor: pointer;
+    font-size: 20px;
+    /*padding-bottom: -200px;*/
+    margin-bottom: -5vh;
+  }
+
+  .quitarLinkIcono {
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+
   }
 }

@@ -1,3 +1,5 @@
-<app-navbar [label]="label" [icon]="icon"></app-navbar>
-<div class="separator"></div>
-<app-card-grid [cols]="cols" [rowHeight]="rowHeight" [cards]="cards"></app-card-grid>
+<app-sidenav [links]="links">
+  <app-secondheader></app-secondheader>
+  <app-card-grid [cols]="cols" [rowHeight]="rowHeight" [cards]="cards"></app-card-grid>
+</app-sidenav>
+

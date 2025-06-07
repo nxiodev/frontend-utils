@@ -1,8 +1,31 @@
-.tabla{
-  border: #333333 solid 1px;
-  margin: 50px 50px 50px 50px;
-
+.table-container {
+  width: 100%;
 }
+
+.tabla-scroll {
+  overflow-x: auto;
+  margin: 50px;
+  border: 1px solid #333333;
+  border-radius: 8px; /* opcional, por estética */
+  padding: 8px; /* opcional, para dar aire a la tabla */
+}
+
+.tabla {
+  min-width: 600px; /* o lo que necesite tu tabla */
+  width: 100%; /* asegura que la tabla use solo lo que necesita */
+}
+
 .colorTabla{
   background-color: whitesmoke;
 }
+@media (max-width: 768px) {
+  .table-container {
+    padding: 0;
+  }
+
+  table {
+    font-size: 12px;
+    min-width: 100%;
+  }
+}
+

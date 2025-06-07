@@ -1,18 +1,18 @@
 import { Component, Input, OnInit, OnDestroy } from '@angular/core';
     import { RouterModule } from '@angular/router';
-    import { HeaderOrganism } from '../../organisms/header/header.component';
     import { BodyOrganism } from '../../organisms/body/body.component';
     import { AtomsStats } from '../../../models/atoms-stats.model';
     import { SidenavOrganism } from '../../organisms/sidenav/sidenav.component';
     import { SidenavService } from '../../../services/sidenav.service';
     import { Subscription } from 'rxjs';
 import {NgIf} from '@angular/common';
+import {SecondHeaderOrganism} from '../../organisms/secondheader/secondheader.component';
 
     @Component({
       selector: 'app-template',
       standalone: true,
       imports: [
-        RouterModule, HeaderOrganism, BodyOrganism, SidenavOrganism
+        RouterModule, BodyOrganism, SidenavOrganism, SecondHeaderOrganism
       ],
       templateUrl: './template.component.html',
       styleUrl: './template.component.css'

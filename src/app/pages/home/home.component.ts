@@ -62,5 +62,11 @@ export class HomeComponent  {
   label = '';
   rowHeight = '400px';
   title = 'Pagina';
-
+  links = [
+    { url: '/descriptions?badge', name: '', icon: 'fa-solid fa-plus' },
+    { url: '/descriptions?input', name: 'profile', icon: 'fa-solid fa-user' },
+    { url: '/descriptions?icon', name: 'home', icon: 'fa-solid fa-house' },
+    { url: '/descriptions?card', name: 'explore', icon: 'fa-solid fa-compass' },
+    { url: '/descriptions?progressspinner', name: 'contac us', icon: 'fa-solid fa-inbox' },
+  ];
 }

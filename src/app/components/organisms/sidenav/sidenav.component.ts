@@ -6,9 +6,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { MatListItem } from '@angular/material/list';
-import { ButtonAtom } from '../../atoms/button/button.component';
 import { SidenavService} from '../../../services/sidenav.service';
-import {IconAtom} from '../../atoms/icon/icon.component';
 import {UniversalIconAtom} from '../../atoms/universal-icon/universal-icon.component';
 
 @Component({
@@ -16,7 +14,7 @@ import {UniversalIconAtom} from '../../atoms/universal-icon/universal-icon.compo
   standalone: true,
   imports: [
     MatSidenav, MatNativeDateModule, MatButtonModule,
-    CommonModule, MatSidenavModule, RouterModule, MatListItem, ButtonAtom, IconAtom, UniversalIconAtom,
+    CommonModule, MatSidenavModule, RouterModule, MatListItem, UniversalIconAtom,
   ],
   templateUrl: 'sidenav.component.html',
   styleUrl: 'sidenav.component.css'

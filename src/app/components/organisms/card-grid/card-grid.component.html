@@ -1,7 +1,7 @@
-<mat-grid-list [cols]="cols" [rowHeight]="rowHeight">
-  <mat-grid-tile *ngFor="let card of cards">
+<div class="grid-container">
+  <div class="grid-item" *ngFor="let card of cards">
     <a [routerLink]="card.link" class="no-underline">
       <app-card [image]="card.image" [title]="card.title" [description]="card.description"></app-card>
     </a>
-  </mat-grid-tile>
-</mat-grid-list>
+  </div>
+</div>

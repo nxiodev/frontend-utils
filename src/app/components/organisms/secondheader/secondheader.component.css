@@ -4,3 +4,39 @@
   right: 0;
   margin: 40px; /* opcional, para que no esté pegado al borde */
 }
+
+.dropdown-container {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: 0;
+  margin-top: 0.5rem;
+  width: 8rem; /* 128px */
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.dropdown-menu button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+}
+
+.dropdown-menu button:hover {
+  background-color: #f3f3f3;
+}
+
+.clickeable{
+  cursor: pointer;
+}

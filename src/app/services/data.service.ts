@@ -30,7 +30,9 @@ export class DataService {
         password
       });
       const token = response.data.access;
+      const refreshToken = response.data.refresh;
       sessionStorage.setItem('token', token);
+      sessionStorage.setItem('refreshToken', refreshToken);
       return token;
     } catch (error) {
       if (error instanceof AxiosError) {
@@ -41,4 +43,19 @@ export class DataService {
       throw error;
     }
   }
+
+  async logout(): Promise<void> {
+    const refreshToken = sessionStorage.getItem('refreshToken');
+    try {
+      await axios.post(`${this.baseUrl}/logout/`, {
+        refresh: refreshToken
+      });
+    } catch (error) {
+      console.error('Logout failed:', error);
+    } finally {
+      sessionStorage.removeItem('token');
+      sessionStorage.removeItem('refresh_token');
+    }
+  }
+
 }

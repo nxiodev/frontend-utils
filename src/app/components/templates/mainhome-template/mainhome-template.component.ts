@@ -1,18 +1,14 @@
 import { Component, Input } from '@angular/core';
-import { RouterLink } from '@angular/router';
-import { NgForOf } from '@angular/common';
 import {SidenavOrganism} from '../../organisms/sidenav/sidenav.component';
 import {SecondHeaderOrganism} from '../../organisms/secondheader/secondheader.component';
-import {CardMolecule} from '../../molecules/card/card.component';
+import {CardsbodyOrganism} from '../../organisms/cardsbody/cardsbody.component';
 
 @Component({
   selector: 'app-mainhome-template',
   imports: [
     SidenavOrganism,
     SecondHeaderOrganism,
-    CardMolecule,
-    RouterLink,
-    NgForOf,
+    CardsbodyOrganism,
   ],
   templateUrl: './mainhome-template.component.html',
   styleUrls: ['./mainhome-template.component.css']

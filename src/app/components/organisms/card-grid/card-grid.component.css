@@ -1,3 +1,16 @@
 .no-underline {
   text-decoration: none;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 16px;
+  padding: 16px;
+  justify-content: center; /* <-- CENTRA las columnas en su fila */
+}
+
+
+.grid-item {
+  width: 100%;
+}

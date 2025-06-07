@@ -1,0 +1,24 @@
+.mostrarCards {
+  display: flex;
+  flex-direction: row; /* Asegura que se acomoden en fila */
+  overflow-x: auto;    /* Activa el scroll horizontal */
+  scroll-behavior: smooth; /* Opcional: suaviza el scroll */
+  gap: 2vw;
+  padding: 1vh 2vw;
+  margin-bottom: 5vh;
+}
+
+.mostrarCards::-webkit-scrollbar {
+  height: 8px;
+}
+
+.mostrarCards::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+
+a {
+  flex: 0.1 0 auto; /* Las tarjetas no se encogen ni se estiran */
+  text-decoration: none;
+  color: inherit;
+}

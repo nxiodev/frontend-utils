@@ -7,10 +7,10 @@ import { MainhomePage} from './pages/mainhome/mainhome/mainhome.component';
 import {UserCrudComponent} from './pages/UserCrud/user-crud/user-crud.component';
 
 export const routes: Routes = [
-  { path: '', component: HomeComponent },
+  {path: '', component: MainhomePage},
+  { path: 'galery', component: HomeComponent },
   { path: 'descriptions/:type', component: DescriptionsComponent },
   { path: 'login', component: LoginComponent },
-  {path: 'home', component: MainhomePage},
   {path: 'crud', component: UserCrudComponent},
 ];
 

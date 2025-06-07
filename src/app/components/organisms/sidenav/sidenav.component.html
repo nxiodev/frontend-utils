@@ -1,10 +1,10 @@
 <mat-sidenav-container class="sidenav-container">
   <!-- Sidenav controlado por el servicio -->
   <mat-sidenav #sidenav [mode]="isMobile ? 'over' : 'side'" [(opened)]="isSidenavOpen" >
-    <app-button (click)="toggleSidenav()" class="dentroLayout">
-      <app-icon>menu</app-icon>
-    </app-button>
+    <app-universal-icon [class]="'fa-solid fa-bars'" class="centradoSinMargen" (click)="toggleSidenav()"></app-universal-icon>
     <div *ngFor="let link of links" class="marginLink">
+
+<!--      { url: '/descriptions?button', name: '', icon: 'fa-solid fa-bars' },-->
       <a
         mat-list-item
         *ngIf="link.icon"
@@ -34,11 +34,11 @@
   </mat-sidenav>
   <mat-sidenav-content class="main-content">
     <!-- Botón para abrir/cerrar sidenav -->
-    <div class="ColorFondoMorado">
-      <div class="botonPequeño">
-        <i (click)="toggleSidenav()" class="material-icons clickable">menu</i>
+      <div class="ColorFondoMorado">
+        <div class="botonPequeño">
+          <app-universal-icon [class]="'fa-solid fa-bars'" class="iconoMenu" (click)="toggleSidenav()"></app-universal-icon>
+        </div>
       </div>
-    </div>
     <div class="content">
       <ng-content></ng-content>
     </div>
